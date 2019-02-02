@@ -46,7 +46,7 @@ class Observation(NamedTuple):
     wind_spd_kt: Optional[float]
 
 
-class ObservationSite():
+class ObservationSite:
     """ BOM Weather Station Observations
 
         List of stations (QLD Example):
@@ -65,7 +65,7 @@ class ObservationSite():
 
         self.wmo = wmo
         self.product = product
-        self.obs_url = f'http://www.bom.gov.au/fwo/{product}/{product}.{wmo}.json'
+        self.obs_url = f"http://www.bom.gov.au/fwo/{product}/{product}.{wmo}.json"
 
     def __repr__(self):
         return f"<Observations {self.product}.{self.wmo}>"
@@ -81,61 +81,58 @@ class ObservationSite():
     def get_observation(self, idx):
         """ Return formatted observation data """
 
-        obs = self.get_observation_data()['data'][idx]
+        obs = self.get_observation_data()["data"][idx]
         obs = self.dict_clean(obs)
 
         # Convert data types
-        local_dt = datetime.strptime(obs['local_date_time_full'],
-                                     '%Y%m%d%H%M%S')
-        utc_dt = datetime.strptime(obs['aifstime_utc'], '%Y%m%d%H%M%S')
+        local_dt = datetime.strptime(obs["local_date_time_full"], "%Y%m%d%H%M%S")
+        utc_dt = datetime.strptime(obs["aifstime_utc"], "%Y%m%d%H%M%S")
         utc_dt = utc_dt.replace(tzinfo=pytz.UTC)
 
-        if obs['vis_km']:
-            obs['vis_km'] = float(obs['vis_km'])
+        if obs["vis_km"]:
+            obs["vis_km"] = float(obs["vis_km"])
 
-        if obs['rain_trace']:
-            obs['rain_trace'] = float(obs['rain_trace'])
+        if obs["rain_trace"]:
+            obs["rain_trace"] = float(obs["rain_trace"])
 
         return Observation(
-            wmo=obs['wmo'],
-            name=obs['name'],
-            history_product=obs['history_product'],
+            wmo=obs["wmo"],
+            name=obs["name"],
+            history_product=obs["history_product"],
             local_dt=local_dt,
             utc_dt=utc_dt,
-            lat=obs['lat'],
-            lon=obs['lon'],
-            apparent_t=obs['apparent_t'],
-            cloud=obs['cloud'],
-            cloud_base_m=obs['cloud_base_m'],
-            cloud_oktas=obs['cloud_oktas'],
-            cloud_type=obs['cloud_type'],
-            delta_t=obs['delta_t'],
-            gust_kmh=obs['gust_kmh'],
-            gust_kt=obs['gust_kt'],
-            air_temp=obs['air_temp'],
-            dewpt=obs['dewpt'],
-            press=obs['press'],
-            press_msl=obs['press_msl'],
-            press_qnh=obs['press_qnh'],
-            rain_trace=obs['rain_trace'],
-            rel_hum=obs['rel_hum'],
-            vis_km=obs['vis_km'],
-            weather=obs['weather'],
-            wind_dir=obs['wind_dir'],
-            wind_spd_kmh=obs['wind_spd_kmh'],
-            wind_spd_kt=obs['wind_spd_kt'])
+            lat=obs["lat"],
+            lon=obs["lon"],
+            apparent_t=obs["apparent_t"],
+            cloud=obs["cloud"],
+            cloud_base_m=obs["cloud_base_m"],
+            cloud_oktas=obs["cloud_oktas"],
+            cloud_type=obs["cloud_type"],
+            delta_t=obs["delta_t"],
+            gust_kmh=obs["gust_kmh"],
+            gust_kt=obs["gust_kt"],
+            air_temp=obs["air_temp"],
+            dewpt=obs["dewpt"],
+            press=obs["press"],
+            press_msl=obs["press_msl"],
+            press_qnh=obs["press_qnh"],
+            rain_trace=obs["rain_trace"],
+            rel_hum=obs["rel_hum"],
+            vis_km=obs["vis_km"],
+            weather=obs["weather"],
+            wind_dir=obs["wind_dir"],
+            wind_spd_kmh=obs["wind_spd_kmh"],
+            wind_spd_kt=obs["wind_spd_kt"],
+        )
 
     @staticmethod
     def dict_clean(obj: dict) -> dict:
         for k, v in obj.items():
-            if v == '-':
+            if v == "-":
                 obj[k] = None
         return obj
 
     def get_observation_data(self):
         """ Get latest observations """
-        r = requests.get(
-            self.obs_url,
-            timeout=10,
-        )
-        return r.json()['observations']
+        r = requests.get(self.obs_url, timeout=10)
+        return r.json()["observations"]
