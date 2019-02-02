@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from bomweather import closest_obs_station
 
 
-def test_closest_station():
+def test_closest_station_cached():
     """ Test some example locations and check against expected names """
 
     st = closest_obs_station(-33.865143, 151.209900)
@@ -15,4 +15,11 @@ def test_closest_station():
     assert "MELBOURNE" in st["site_name"]
 
     st = closest_obs_station(-27.470125, 153.021072)
+    assert "BRISBANE" in st["site_name"]
+
+
+def test_closest_station_uncached():
+    """ Test some example locations and check against expected names """
+
+    st = closest_obs_station(-27.470125, 153.021072, web_lookup=True)
     assert "BRISBANE" in st["site_name"]
