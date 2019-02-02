@@ -37,7 +37,8 @@ setup(
     ],
     license='MIT',
     install_requires=[
+        'requests',
+        'python-dateutil'
         'pytz',
-        'requests'
     ],   
 )
