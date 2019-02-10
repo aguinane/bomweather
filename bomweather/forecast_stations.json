@@ -1,0 +1,1143 @@
+{
+    "IDD10150": {
+        "lat": -12.4348,
+        "lon": 130.7486,
+        "product": "IDD10150",
+        "site_name": "wagait-beach",
+        "state": "nt"
+    },
+    "IDD10161": {
+        "lat": -23.71,
+        "lon": 133.8683,
+        "product": "IDD10161",
+        "site_name": "alice-springs",
+        "state": "nt"
+    },
+    "IDD10195": {
+        "lat": -12.5833,
+        "lon": 131.9167,
+        "product": "IDD10195",
+        "site_name": "jim-jim-falls",
+        "state": "nt"
+    },
+    "IDD10196": {
+        "lat": -13.15,
+        "lon": 130.6333,
+        "product": "IDD10196",
+        "site_name": "wangi-falls",
+        "state": "nt"
+    },
+    "IDD10197": {
+        "lat": -25.3602,
+        "lon": 131.0196,
+        "product": "IDD10197",
+        "site_name": "uluru",
+        "state": "nt"
+    },
+    "IDD10199": {
+        "lat": -12.1939,
+        "lon": 136.7637,
+        "product": "IDD10199",
+        "site_name": "nhulunbuy",
+        "state": "nt"
+    },
+    "IDD10200": {
+        "lat": -14.4728,
+        "lon": 132.2612,
+        "product": "IDD10200",
+        "site_name": "katherine",
+        "state": "nt"
+    },
+    "IDD10201": {
+        "lat": -25.1896,
+        "lon": 130.9737,
+        "product": "IDD10201",
+        "site_name": "yulara",
+        "state": "nt"
+    },
+    "IDD10202": {
+        "lat": -12.6592,
+        "lon": 132.894,
+        "product": "IDD10202",
+        "site_name": "jabiru",
+        "state": "nt"
+    },
+    "IDD10203": {
+        "lat": -19.6475,
+        "lon": 134.1896,
+        "product": "IDD10203",
+        "site_name": "tennant-creek",
+        "state": "nt"
+    },
+    "IDD10205": {
+        "lat": -12.0482,
+        "lon": 134.2263,
+        "product": "IDD10205",
+        "site_name": "maningrida",
+        "state": "nt"
+    },
+    "IDD10206": {
+        "lat": -12.4721,
+        "lon": 130.9926,
+        "product": "IDD10206",
+        "site_name": "palmerston",
+        "state": "nt"
+    },
+    "IDD10207": {
+        "lat": -22.2565,
+        "lon": 131.8011,
+        "product": "IDD10207",
+        "site_name": "yuendumu",
+        "state": "nt"
+    },
+    "IDN10064": {
+        "lat": -33.8658,
+        "lon": 151.2161,
+        "product": "IDN10064",
+        "site_name": "sydney-olympic-park",
+        "state": "nsw"
+    },
+    "IDN11024": {
+        "lat": -28.2888,
+        "lon": 153.3651,
+        "product": "IDN11024",
+        "site_name": "murwillumbah",
+        "state": "nsw"
+    },
+    "IDN11025": {
+        "lat": -32.804,
+        "lon": 141.5096,
+        "product": "IDN11025",
+        "site_name": "south-west-rocks",
+        "state": "nsw"
+    },
+    "IDN11026": {
+        "lat": -32.25,
+        "lon": 150.8667,
+        "product": "IDN11026",
+        "site_name": "muswellbrook",
+        "state": "nsw"
+    },
+    "IDN11027": {
+        "lat": -34.675,
+        "lon": 150.8519,
+        "product": "IDN11027",
+        "site_name": "kiama",
+        "state": "nsw"
+    },
+    "IDN11028": {
+        "lat": -36.4269,
+        "lon": 150.0787,
+        "product": "IDN11028",
+        "site_name": "bermagui",
+        "state": "nsw"
+    },
+    "IDN11029": {
+        "lat": -30.2204,
+        "lon": 151.6714,
+        "product": "IDN11029",
+        "site_name": "guyra",
+        "state": "nsw"
+    },
+    "IDN11030": {
+        "lat": -33.8887,
+        "lon": 149.9373,
+        "product": "IDN11030",
+        "site_name": "oberon",
+        "state": "nsw"
+    },
+    "IDN11031": {
+        "lat": -35.45,
+        "lon": 149.2,
+        "product": "IDN11031",
+        "site_name": "queanbeyan",
+        "state": "nsw"
+    },
+    "IDN11032": {
+        "lat": -36.416,
+        "lon": 148.6092,
+        "product": "IDN11032",
+        "site_name": "jindabyne",
+        "state": "nsw"
+    },
+    "IDN11033": {
+        "lat": -31.5086,
+        "lon": 150.6793,
+        "product": "IDN11033",
+        "site_name": "quirindi",
+        "state": "nsw"
+    },
+    "IDN11034": {
+        "lat": -32.3,
+        "lon": 147.7,
+        "product": "IDN11034",
+        "site_name": "narromine",
+        "state": "nsw"
+    },
+    "IDN11035": {
+        "lat": -35.3085,
+        "lon": 148.0641,
+        "product": "IDN11035",
+        "site_name": "tumut",
+        "state": "nsw"
+    },
+    "IDN11036": {
+        "lat": -34.8,
+        "lon": 146.6667,
+        "product": "IDN11036",
+        "site_name": "narrandera",
+        "state": "nsw"
+    },
+    "IDN11037": {
+        "lat": -31.7333,
+        "lon": 143.2167,
+        "product": "IDN11037",
+        "site_name": "wilcannia",
+        "state": "nsw"
+    },
+    "IDN11038": {
+        "lat": -32.3937,
+        "lon": 142.4173,
+        "product": "IDN11038",
+        "site_name": "menindee",
+        "state": "nsw"
+    },
+    "IDN11051": {
+        "lat": -33.0025,
+        "lon": 151.5794,
+        "product": "IDN11051",
+        "site_name": "toronto",
+        "state": "nsw"
+    },
+    "IDN11052": {
+        "lat": -33.3531,
+        "lon": 151.4964,
+        "product": "IDN11052",
+        "site_name": "entrance",
+        "state": "nsw"
+    },
+    "IDN11053": {
+        "lat": -34.4333,
+        "lon": 150.8833,
+        "product": "IDN11053",
+        "site_name": "wollongong",
+        "state": "nsw"
+    },
+    "IDN11055": {
+        "lat": -36.4917,
+        "lon": 148.2859,
+        "product": "IDN11055",
+        "site_name": "thredbo",
+        "state": "nsw"
+    },
+    "IDN11101": {
+        "lat": -30.5167,
+        "lon": 151.6681,
+        "product": "IDN11101",
+        "site_name": "armidale",
+        "state": "nsw"
+    },
+    "IDN11104": {
+        "lat": -31.484,
+        "lon": 145.8294,
+        "product": "IDN11104",
+        "site_name": "cobar",
+        "state": "nsw"
+    },
+    "IDN11106": {
+        "lat": -32.2201,
+        "lon": 148.5695,
+        "product": "IDN11106",
+        "site_name": "dubbo",
+        "state": "nsw"
+    },
+    "IDN11107": {
+        "lat": -32.3353,
+        "lon": 150.5645,
+        "product": "IDN11107",
+        "site_name": "goulburn",
+        "state": "nsw"
+    },
+    "IDN11108": {
+        "lat": -34.7208,
+        "lon": 150.6491,
+        "product": "IDN11108",
+        "site_name": "griffith",
+        "state": "nsw"
+    },
+    "IDN11109": {
+        "lat": -33.7122,
+        "lon": 150.3087,
+        "product": "IDN11109",
+        "site_name": "katoomba",
+        "state": "nsw"
+    },
+    "IDN11110": {
+        "lat": -28.807,
+        "lon": 153.2628,
+        "product": "IDN11110",
+        "site_name": "lismore",
+        "state": "nsw"
+    },
+    "IDN11111": {
+        "lat": -32.1833,
+        "lon": 147.3833,
+        "product": "IDN11111",
+        "site_name": "orange",
+        "state": "nsw"
+    },
+    "IDN11113": {
+        "lat": -31.0867,
+        "lon": 150.8467,
+        "product": "IDN11113",
+        "site_name": "tamworth",
+        "state": "nsw"
+    },
+    "IDN11116": {
+        "lat": -34.5,
+        "lon": 150.4,
+        "product": "IDN11116",
+        "site_name": "bowral",
+        "state": "nsw"
+    },
+    "IDN11117": {
+        "lat": -33.9667,
+        "lon": 141.0333,
+        "product": "IDN11117",
+        "site_name": "taree",
+        "state": "nsw"
+    },
+    "IDN11118": {
+        "lat": -30.6088,
+        "lon": 148.972,
+        "product": "IDN11118",
+        "site_name": "bega",
+        "state": "nsw"
+    },
+    "IDN11119": {
+        "lat": -31.2,
+        "lon": 146.2,
+        "product": "IDN11119",
+        "site_name": "cooma",
+        "state": "nsw"
+    },
+    "IDQ10090": {
+        "lat": -27.085,
+        "lon": 152.9517,
+        "product": "IDQ10090",
+        "site_name": "caboolture",
+        "state": "qld"
+    },
+    "IDQ10095": {
+        "lat": -27.55,
+        "lon": 152.9833,
+        "product": "IDQ10095",
+        "site_name": "oxley",
+        "state": "qld"
+    },
+    "IDQ10110": {
+        "lat": -10.5831,
+        "lon": 142.2203,
+        "product": "IDQ10110",
+        "site_name": "thursday-island",
+        "state": "qld"
+    },
+    "IDQ10120": {
+        "lat": -16.664,
+        "lon": 139.1837,
+        "product": "IDQ10120",
+        "site_name": "mornington-island",
+        "state": "qld"
+    },
+    "IDQ10130": {
+        "lat": -20.8192,
+        "lon": 144.2333,
+        "product": "IDQ10130",
+        "site_name": "hughenden",
+        "state": "qld"
+    },
+    "IDQ10140": {
+        "lat": -13.7642,
+        "lon": 143.1178,
+        "product": "IDQ10140",
+        "site_name": "port-douglas",
+        "state": "qld"
+    },
+    "IDQ10150": {
+        "lat": -18.65,
+        "lon": 146.1667,
+        "product": "IDQ10150",
+        "site_name": "ingham",
+        "state": "qld"
+    },
+    "IDQ10160": {
+        "lat": -20.4,
+        "lon": 148.5833,
+        "product": "IDQ10160",
+        "site_name": "proserpine",
+        "state": "qld"
+    },
+    "IDQ10170": {
+        "lat": -23.1364,
+        "lon": 150.7506,
+        "product": "IDQ10170",
+        "site_name": "yeppoon",
+        "state": "qld"
+    },
+    "IDQ10180": {
+        "lat": -25.6408,
+        "lon": 149.7958,
+        "product": "IDQ10180",
+        "site_name": "taroom",
+        "state": "qld"
+    },
+    "IDQ10190": {
+        "lat": -20.7087,
+        "lon": 140.5182,
+        "product": "IDQ10190",
+        "site_name": "cloncurry",
+        "state": "qld"
+    },
+    "IDQ10200": {
+        "lat": -22.4,
+        "lon": 143.0403,
+        "product": "IDQ10200",
+        "site_name": "winton",
+        "state": "qld"
+    },
+    "IDQ10210": {
+        "lat": -25.42,
+        "lon": 142.6594,
+        "product": "IDQ10210",
+        "site_name": "windorah",
+        "state": "qld"
+    },
+    "IDQ10220": {
+        "lat": -27.1591,
+        "lon": 149.0702,
+        "product": "IDQ10220",
+        "site_name": "surat",
+        "state": "qld"
+    },
+    "IDQ10230": {
+        "lat": -28.6617,
+        "lon": 151.9339,
+        "product": "IDQ10230",
+        "site_name": "stanthorpe",
+        "state": "qld"
+    },
+    "IDQ10240": {
+        "lat": -24.8642,
+        "lon": 151.1247,
+        "product": "IDQ10240",
+        "site_name": "monto",
+        "state": "qld"
+    },
+    "IDQ10610": {
+        "lat": -28.0167,
+        "lon": 153.4167,
+        "product": "IDQ10610",
+        "site_name": "surfers-paradise",
+        "state": "qld"
+    },
+    "IDQ10611": {
+        "lat": -26.4064,
+        "lon": 153.1025,
+        "product": "IDQ10611",
+        "site_name": "noosa-heads",
+        "state": "qld"
+    },
+    "IDQ10900": {
+        "lat": -25.9003,
+        "lon": 139.3486,
+        "product": "IDQ10900",
+        "site_name": "birdsville",
+        "state": "qld"
+    },
+    "IDQ10901": {
+        "lat": -24.8667,
+        "lon": 152.3467,
+        "product": "IDQ10901",
+        "site_name": "bundaberg",
+        "state": "qld"
+    },
+    "IDQ10902": {
+        "lat": -16.9333,
+        "lon": 145.7833,
+        "product": "IDQ10902",
+        "site_name": "cairns",
+        "state": "qld"
+    },
+    "IDQ10903": {
+        "lat": -26.4139,
+        "lon": 146.2558,
+        "product": "IDQ10903",
+        "site_name": "charleville",
+        "state": "qld"
+    },
+    "IDQ10904": {
+        "lat": -20.0781,
+        "lon": 146.2614,
+        "product": "IDQ10904",
+        "site_name": "charters-towers",
+        "state": "qld"
+    },
+    "IDQ10906": {
+        "lat": -23.5267,
+        "lon": 148.1617,
+        "product": "IDQ10906",
+        "site_name": "emerald",
+        "state": "qld"
+    },
+    "IDQ10907": {
+        "lat": -23.8333,
+        "lon": 151.25,
+        "product": "IDQ10907",
+        "site_name": "gladstone",
+        "state": "qld"
+    },
+    "IDQ10908": {
+        "lat": -28.5481,
+        "lon": 150.3075,
+        "product": "IDQ10908",
+        "site_name": "goondiwindi",
+        "state": "qld"
+    },
+    "IDQ10909": {
+        "lat": -26.1831,
+        "lon": 152.6414,
+        "product": "IDQ10909",
+        "site_name": "gympie",
+        "state": "qld"
+    },
+    "IDQ10910": {
+        "lat": -19.4,
+        "lon": 146.5,
+        "product": "IDQ10910",
+        "site_name": "hervey-bay",
+        "state": "qld"
+    },
+    "IDQ10911": {
+        "lat": -27.6117,
+        "lon": 152.7608,
+        "product": "IDQ10911",
+        "site_name": "ipswich",
+        "state": "qld"
+    },
+    "IDQ10913": {
+        "lat": -23.45,
+        "lon": 144.25,
+        "product": "IDQ10913",
+        "site_name": "longreach",
+        "state": "qld"
+    },
+    "IDQ10914": {
+        "lat": -21.1706,
+        "lon": 149.1794,
+        "product": "IDQ10914",
+        "site_name": "mackay",
+        "state": "qld"
+    },
+    "IDQ10916": {
+        "lat": -16.3772,
+        "lon": 143.9844,
+        "product": "IDQ10916",
+        "site_name": "mount-isa",
+        "state": "qld"
+    },
+    "IDQ10918": {
+        "lat": -23.4,
+        "lon": 150.5,
+        "product": "IDQ10918",
+        "site_name": "rockhampton",
+        "state": "qld"
+    },
+    "IDQ10919": {
+        "lat": -20.2997,
+        "lon": 148.2206,
+        "product": "IDQ10919",
+        "site_name": "roma",
+        "state": "qld"
+    },
+    "IDQ10922": {
+        "lat": -27.5836,
+        "lon": 151.9317,
+        "product": "IDQ10922",
+        "site_name": "toowoomba",
+        "state": "qld"
+    },
+    "IDQ10923": {
+        "lat": -19.2483,
+        "lon": 146.7661,
+        "product": "IDQ10923",
+        "site_name": "townsville",
+        "state": "qld"
+    },
+    "IDQ10925": {
+        "lat": -12.7,
+        "lon": 142.1,
+        "product": "IDQ10925",
+        "site_name": "weipa",
+        "state": "qld"
+    },
+    "IDT13501": {
+        "lat": -41.0661,
+        "lon": 145.9431,
+        "product": "IDT13501",
+        "site_name": "burnie",
+        "state": "tas"
+    },
+    "IDT13503": {
+        "lat": -41.1667,
+        "lon": 146.3617,
+        "product": "IDT13503",
+        "site_name": "devonport",
+        "state": "tas"
+    },
+    "IDT13505": {
+        "lat": -42.0661,
+        "lon": 145.5681,
+        "product": "IDT13505",
+        "site_name": "queenstown",
+        "state": "tas"
+    },
+    "IDT13506": {
+        "lat": -41.15,
+        "lon": 147.5,
+        "product": "IDT13506",
+        "site_name": "scottsdale",
+        "state": "tas"
+    },
+    "IDT13507": {
+        "lat": -40.8492,
+        "lon": 145.1125,
+        "product": "IDT13507",
+        "site_name": "smithton",
+        "state": "tas"
+    },
+    "IDT13509": {
+        "lat": -42.2,
+        "lon": 145.3,
+        "product": "IDT13509",
+        "site_name": "strahan",
+        "state": "tas"
+    },
+    "IDT13510": {
+        "lat": -42.1994,
+        "lon": 148.0442,
+        "product": "IDT13510",
+        "site_name": "swansea",
+        "state": "tas"
+    },
+    "IDT13511": {
+        "lat": -41.1597,
+        "lon": 146.1453,
+        "product": "IDT13511",
+        "site_name": "ulverstone",
+        "state": "tas"
+    },
+    "IDT13600": {
+        "lat": -42.95,
+        "lon": 147.2667,
+        "product": "IDT13600",
+        "site_name": "kingston",
+        "state": "tas"
+    },
+    "IDT13610": {
+        "lat": -41.3994,
+        "lon": 147.1347,
+        "product": "IDT13610",
+        "site_name": "mowbray",
+        "state": "tas"
+    },
+    "IDT13620": {
+        "lat": -41.3833,
+        "lon": 147.1167,
+        "product": "IDT13620",
+        "site_name": "new-pelion-hut",
+        "state": "tas"
+    },
+    "IDT16010": {
+        "lat": -39.9322,
+        "lon": 143.8486,
+        "product": "IDT16010",
+        "site_name": "currie",
+        "state": "tas"
+    },
+    "IDT16020": {
+        "lat": -41.3831,
+        "lon": 146.3278,
+        "product": "IDT16020",
+        "site_name": "sheffield",
+        "state": "tas"
+    },
+    "IDT16030": {
+        "lat": -41.5,
+        "lon": 147.3,
+        "product": "IDT16030",
+        "site_name": "evandale",
+        "state": "tas"
+    },
+    "IDT16040": {
+        "lat": -40.1167,
+        "lon": 148.0167,
+        "product": "IDT16040",
+        "site_name": "whitemark",
+        "state": "tas"
+    },
+    "IDT16050": {
+        "lat": -41.0067,
+        "lon": 147.3917,
+        "product": "IDT16050",
+        "site_name": "bridport",
+        "state": "tas"
+    },
+    "IDT16060": {
+        "lat": -42.3003,
+        "lon": 146.4486,
+        "product": "IDT16060",
+        "site_name": "tarraleah",
+        "state": "tas"
+    },
+    "IDT16070": {
+        "lat": -41.8833,
+        "lon": 145.3333,
+        "product": "IDT16070",
+        "site_name": "zeehan",
+        "state": "tas"
+    },
+    "IDT16080": {
+        "lat": -42.4403,
+        "lon": 147.4083,
+        "product": "IDT16080",
+        "site_name": "tunnack",
+        "state": "tas"
+    },
+    "IDT16090": {
+        "lat": -42.5844,
+        "lon": 148.0636,
+        "product": "IDT16090",
+        "site_name": "maria-island",
+        "state": "tas"
+    },
+    "IDT16110": {
+        "lat": -41.6606,
+        "lon": 147.1008,
+        "product": "IDT16110",
+        "site_name": "ouse",
+        "state": "tas"
+    },
+    "IDT16120": {
+        "lat": -41.1494,
+        "lon": 146.6033,
+        "product": "IDT16120",
+        "site_name": "sorell",
+        "state": "tas"
+    },
+    "IDV10450": {
+        "lat": -37.5719,
+        "lon": 144.7401,
+        "product": "IDV10450",
+        "site_name": "sunbury",
+        "state": "vic"
+    },
+    "IDV10701": {
+        "lat": -38.3333,
+        "lon": 144.3167,
+        "product": "IDV10701",
+        "site_name": "torquay",
+        "state": "vic"
+    },
+    "IDV10702": {
+        "lat": -38.3667,
+        "lon": 145.1833,
+        "product": "IDV10702",
+        "site_name": "cerberus",
+        "state": "vic"
+    },
+    "IDV10703": {
+        "lat": -36.118,
+        "lon": 146.9061,
+        "product": "IDV10703",
+        "site_name": "wodonga",
+        "state": "vic"
+    },
+    "IDV10704": {
+        "lat": -37.8167,
+        "lon": 147.6167,
+        "product": "IDV10704",
+        "site_name": "bairnsdale",
+        "state": "vic"
+    },
+    "IDV10705": {
+        "lat": -37.5489,
+        "lon": 143.8192,
+        "product": "IDV10705",
+        "site_name": "ballarat",
+        "state": "vic"
+    },
+    "IDV10706": {
+        "lat": -36.7533,
+        "lon": 144.2825,
+        "product": "IDV10706",
+        "site_name": "bendigo",
+        "state": "vic"
+    },
+    "IDV10707": {
+        "lat": -38.2798,
+        "lon": 143.6613,
+        "product": "IDV10707",
+        "site_name": "colac",
+        "state": "vic"
+    },
+    "IDV10708": {
+        "lat": -36.1647,
+        "lon": 144.7642,
+        "product": "IDV10708",
+        "site_name": "echuca",
+        "state": "vic"
+    },
+    "IDV10710": {
+        "lat": -37.7333,
+        "lon": 142.0167,
+        "product": "IDV10710",
+        "site_name": "hamilton",
+        "state": "vic"
+    },
+    "IDV10711": {
+        "lat": -36.6613,
+        "lon": 142.0687,
+        "product": "IDV10711",
+        "site_name": "horsham",
+        "state": "vic"
+    },
+    "IDV10714": {
+        "lat": -34.2358,
+        "lon": 142.0867,
+        "product": "IDV10714",
+        "site_name": "mildura",
+        "state": "vic"
+    },
+    "IDV10718": {
+        "lat": -37.6917,
+        "lon": 148.4589,
+        "product": "IDV10718",
+        "site_name": "orbost",
+        "state": "vic"
+    },
+    "IDV10719": {
+        "lat": -38.1156,
+        "lon": 147.1322,
+        "product": "IDV10719",
+        "site_name": "sale",
+        "state": "vic"
+    },
+    "IDV10721": {
+        "lat": -37.0277,
+        "lon": 145.1491,
+        "product": "IDV10721",
+        "site_name": "seymour",
+        "state": "vic"
+    },
+    "IDV10722": {
+        "lat": -36.3783,
+        "lon": 145.4192,
+        "product": "IDV10722",
+        "site_name": "shepparton",
+        "state": "vic"
+    },
+    "IDV10725": {
+        "lat": -36.3667,
+        "lon": 146.3,
+        "product": "IDV10725",
+        "site_name": "wangaratta",
+        "state": "vic"
+    },
+    "IDV10726": {
+        "lat": -38.3725,
+        "lon": 142.4694,
+        "product": "IDV10726",
+        "site_name": "warrnambool",
+        "state": "vic"
+    },
+    "IDV10728": {
+        "lat": -38.6078,
+        "lon": 145.5965,
+        "product": "IDV10728",
+        "site_name": "wonthaggi",
+        "state": "vic"
+    },
+    "IDV17001": {
+        "lat": -35.9,
+        "lon": 142.85,
+        "product": "IDV17001",
+        "site_name": "birchip",
+        "state": "vic"
+    },
+    "IDV17002": {
+        "lat": -37.0364,
+        "lon": 141.2967,
+        "product": "IDV17002",
+        "site_name": "edenhope",
+        "state": "vic"
+    },
+    "IDV17003": {
+        "lat": -35.9164,
+        "lon": 145.65,
+        "product": "IDV17003",
+        "site_name": "cobram",
+        "state": "vic"
+    },
+    "IDV17004": {
+        "lat": -34.7667,
+        "lon": 142.3333,
+        "product": "IDV17004",
+        "site_name": "lake-mountain",
+        "state": "vic"
+    },
+    "IDV17005": {
+        "lat": -37.0525,
+        "lon": 146.0872,
+        "product": "IDV17005",
+        "site_name": "mansfield",
+        "state": "vic"
+    },
+    "IDV17101": {
+        "lat": -38.6357,
+        "lon": 143.5127,
+        "product": "IDV17101",
+        "site_name": "weeaproinah",
+        "state": "vic"
+    },
+    "IDV17102": {
+        "lat": -37.25,
+        "lon": 144.45,
+        "product": "IDV17102",
+        "site_name": "kyneton",
+        "state": "vic"
+    },
+    "IDV17103": {
+        "lat": -38.2,
+        "lon": 145.9,
+        "product": "IDV17103",
+        "site_name": "warragul",
+        "state": "vic"
+    },
+    "IDV17104": {
+        "lat": -37.1011,
+        "lon": 147.598,
+        "product": "IDV17104",
+        "site_name": "omeo",
+        "state": "vic"
+    },
+    "IDW12300": {
+        "lat": -32.0089,
+        "lon": 115.5022,
+        "product": "IDW12300",
+        "site_name": "rottnest-island",
+        "state": "wa"
+    },
+    "IDW13110": {
+        "lat": -28.3456,
+        "lon": 114.6367,
+        "product": "IDW13110",
+        "site_name": "northampton",
+        "state": "wa"
+    },
+    "IDW13120": {
+        "lat": -31.016,
+        "lon": 115.3322,
+        "product": "IDW13120",
+        "site_name": "lancelin",
+        "state": "wa"
+    },
+    "IDW13130": {
+        "lat": -17.4211,
+        "lon": 124.9246,
+        "product": "IDW13130",
+        "site_name": "wind-harbour",
+        "state": "wa"
+    },
+    "IDW13140": {
+        "lat": -33.9372,
+        "lon": 118.0075,
+        "product": "IDW13140",
+        "site_name": "gnowangerup",
+        "state": "wa"
+    },
+    "IDW13150": {
+        "lat": -32.9803,
+        "lon": 121.6433,
+        "product": "IDW13150",
+        "site_name": "salmon-gums",
+        "state": "wa"
+    },
+    "IDW13160": {
+        "lat": -20.8508,
+        "lon": 120.6961,
+        "product": "IDW13160",
+        "site_name": "wagin",
+        "state": "wa"
+    },
+    "IDW13170": {
+        "lat": -31.3742,
+        "lon": 117.5861,
+        "product": "IDW13170",
+        "site_name": "york",
+        "state": "wa"
+    },
+    "IDW13180": {
+        "lat": -21.6,
+        "lon": 119.7,
+        "product": "IDW13180",
+        "site_name": "yalgoo",
+        "state": "wa"
+    },
+    "IDW13190": {
+        "lat": -26.5914,
+        "lon": 120.2258,
+        "product": "IDW13190",
+        "site_name": "wiluna",
+        "state": "wa"
+    },
+    "IDW13200": {
+        "lat": -32.0403,
+        "lon": 126.0964,
+        "product": "IDW13200",
+        "site_name": "cocklebiddy",
+        "state": "wa"
+    },
+    "IDW13210": {
+        "lat": -21.7125,
+        "lon": 122.2281,
+        "product": "IDW13210",
+        "site_name": "telfer",
+        "state": "wa"
+    },
+    "IDW13220": {
+        "lat": -16.5167,
+        "lon": 122.8908,
+        "product": "IDW13220",
+        "site_name": "lombadina",
+        "state": "wa"
+    },
+    "IDW13230": {
+        "lat": -26.1317,
+        "lon": 126.5839,
+        "product": "IDW13230",
+        "site_name": "warburton",
+        "state": "wa"
+    },
+    "IDW13240": {
+        "lat": -25.1883,
+        "lon": 114.68,
+        "product": "IDW13240",
+        "site_name": "balgo-hill",
+        "state": "wa"
+    },
+    "IDW14101": {
+        "lat": -17.95,
+        "lon": 122.25,
+        "product": "IDW14101",
+        "site_name": "broome",
+        "state": "wa"
+    },
+    "IDW14102": {
+        "lat": -15.4644,
+        "lon": 128.1,
+        "product": "IDW14102",
+        "site_name": "port-hedland",
+        "state": "wa"
+    },
+    "IDW14103": {
+        "lat": -20.7097,
+        "lon": 116.7742,
+        "product": "IDW14103",
+        "site_name": "karratha",
+        "state": "wa"
+    },
+    "IDW14104": {
+        "lat": -23.3683,
+        "lon": 119.7314,
+        "product": "IDW14104",
+        "site_name": "newman",
+        "state": "wa"
+    },
+    "IDW14105": {
+        "lat": -22.3761,
+        "lon": 114.1105,
+        "product": "IDW14105",
+        "site_name": "exmouth",
+        "state": "wa"
+    },
+    "IDW14106": {
+        "lat": -24.8878,
+        "lon": 113.67,
+        "product": "IDW14106",
+        "site_name": "carnarvon",
+        "state": "wa"
+    },
+    "IDW14107": {
+        "lat": -28.7769,
+        "lon": 114.605,
+        "product": "IDW14107",
+        "site_name": "geraldton",
+        "state": "wa"
+    },
+    "IDW14108": {
+        "lat": -30.7847,
+        "lon": 121.4533,
+        "product": "IDW14108",
+        "site_name": "kalgoorlie",
+        "state": "wa"
+    },
+    "IDW14109": {
+        "lat": -33.3267,
+        "lon": 115.63,
+        "product": "IDW14109",
+        "site_name": "bunbury",
+        "state": "wa"
+    },
+    "IDW14110": {
+        "lat": -32.45,
+        "lon": 116.3,
+        "product": "IDW14110",
+        "site_name": "albany",
+        "state": "wa"
+    },
+    "IDW14111": {
+        "lat": -33.85,
+        "lon": 121.8833,
+        "product": "IDW14111",
+        "site_name": "esperance",
+        "state": "wa"
+    },
+    "IDW14112": {
+        "lat": -15.7828,
+        "lon": 128.7353,
+        "product": "IDW14112",
+        "site_name": "kununurra",
+        "state": "wa"
+    },
+    "IDW14113": {
+        "lat": -26.6136,
+        "lon": 118.5372,
+        "product": "IDW14113",
+        "site_name": "meekatharra",
+        "state": "wa"
+    },
+    "IDW14114": {
+        "lat": -32.5211,
+        "lon": 115.75,
+        "product": "IDW14114",
+        "site_name": "mandurah",
+        "state": "wa"
+    },
+    "IDW14115": {
+        "lat": -33.6611,
+        "lon": 115.3456,
+        "product": "IDW14115",
+        "site_name": "busselton",
+        "state": "wa"
+    }
+}
