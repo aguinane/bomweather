@@ -19,7 +19,7 @@ import json
 import io
 from math import cos, asin, sqrt
 from typing import NamedTuple
-from typing import Tuple
+from typing import Tuple, Optional, Iterator, List
 from pathlib import Path
 import requests
 
@@ -27,6 +27,18 @@ STATES = ["ant", "nsw", "nt", "qld", "tas", "vic", "wa"]
 
 thisdir = Path(os.path.dirname(os.path.abspath(__file__)))
 OBS_STN_LOOKUP = thisdir / "obs_stations.json"
+FC_STN_LOOKUP = thisdir / "forecast_stations.json"
+
+
+class Station(NamedTuple):
+    """ Weather Observations """
+
+    site: str
+    site_name: str
+    lat: float
+    lon: float
+    state: str
+    wmo: int
 
 
 def get_obs_locations(web_lookup=False) -> dict:
@@ -40,22 +52,83 @@ def get_obs_locations(web_lookup=False) -> dict:
         with open(OBS_STN_LOOKUP, "r") as fp:
             return json.load(fp)
 
-    logging.info("Downloading BOM Station Data")
     data = {}
-    products = get_product_list()
-    stations = parse_station_list()
-    for wmo in products:
-        if wmo in stations.keys():
-            station = stations[wmo]
+    products = get_observations_product_list()
+    stations = list(parse_station_list())
+    for station in stations:
+        wmo = station.wmo
+        if wmo:
+            try:
+                product = products[wmo]
+            except KeyError:
+                continue
             data[wmo] = {
                 "wmo": wmo,
-                "product": products[wmo],
+                "product": product,
                 "lat": station.lat,
                 "lon": station.lon,
                 "state": station.state,
                 "site_name": station.site_name,
             }
     return data
+
+
+def get_forecast_locations(web_lookup=False) -> dict:
+    """ Get list of forecast locations
+
+        :param web_lookup: Should it re-download station list from web
+    """
+
+    if FC_STN_LOOKUP.is_file() and not web_lookup:
+        # Load existing station list
+        with open(FC_STN_LOOKUP, "r") as fp:
+            return json.load(fp)
+
+    data = {}
+    products = get_forecast_product_list()
+    stations = list(parse_station_list())
+    for town in products.keys():
+        product = products[town][0]
+        state = products[town][1]
+        station = match_forecast_to_station(state, town, stations)
+        if station:
+            data[product] = {
+                "site_name": town,
+                "product": product,
+                "lat": station.lat,
+                "lon": station.lon,
+                "state": state,
+            }
+    return data
+
+
+def match_forecast_to_station(
+    state: str, town: str, stations: List[Station]
+) -> Optional[Station]:
+
+    town_name = town.split("-", 1)[0]
+    for station in stations:
+        if not station.lat:
+            continue
+        st_state = station.state.lower()
+        st_name = station.site_name.lower()
+        if state == st_state:
+            if town_name in st_name:
+                return station
+    return None
+
+
+def geo_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    """ Get distance between points
+    Formulala from https://stackoverflow.com/a/41337005
+    """
+    p = 0.017_453_292_519_943_295
+    a = (
+        0.5
+        - cos((lat2 - lat1) * p) / 2
+        + cos(lat1 * p) * cos(lat2 * p) * (1 - cos((lon2 - lon1) * p)) / 2
+    )
+    return 12742 * asin(sqrt(a))
 
 
 def closest_obs_station(lat: float, lon: float, web_lookup: bool = False):
@@ -65,18 +138,6 @@ def closest_obs_station(lat: float, lon: float, web_lookup: bool = False):
     :param lon: Longitude
     :param web_lookup: Should it re-download station list from web
     """
-
-    def geo_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-        """ Get distance between points
-        Formulala from https://stackoverflow.com/a/41337005
-        """
-        p = 0.017_453_292_519_943_295
-        a = (
-            0.5
-            - cos((lat2 - lat1) * p) / 2
-            + cos(lat1 * p) * cos(lat2 * p) * (1 - cos((lon2 - lon1) * p)) / 2
-        )
-        return 12742 * asin(sqrt(a))
 
     stations = get_obs_locations(web_lookup)
     closest_wmo = min(
@@ -88,10 +149,29 @@ def closest_obs_station(lat: float, lon: float, web_lookup: bool = False):
     return stations[closest_wmo]
 
 
-def get_product_list():
+def closest_forecast_location(lat: float, lon: float, web_lookup: bool = False):
+    """ Get the closest station for a location
+
+    :param lat: Latitude
+    :param lon: Longitude
+    :param web_lookup: Should it re-download station list from web
+    """
+
+    stations = get_forecast_locations(web_lookup)
+    closest_product = min(
+        stations,
+        key=lambda product: geo_distance(
+            lat, lon, stations[product]["lat"], stations[product]["lon"]
+        ),
+    )
+    return stations[closest_product]
+
+
+def get_observations_product_list():
     """ Get list of history product IDs for WMOs
         by scraping state overivew pages
     """
+    logging.info("Scraping list of BOM observation locations")
     products = dict()
     pattern = (
         r'<a href="/products/(?P<product>ID[A-Z]\d\d\d\d\d)/'
@@ -108,21 +188,12 @@ def get_product_list():
     return products
 
 
-class Station(NamedTuple):
-    """ Weather Observations """
-
-    site: str
-    site_name: str
-    lat: float
-    lon: float
-    state: str
-    wmo: int
-
-
 def download_station_list():
     """ Download list of observation station metadata from
         Bureau of Meteorology FTP service
     """
+
+    logging.info("Downloading BOM Station Data")
     host = "ftp.bom.gov.au"
     folder = "anon2/home/ncc/metadata/sitelists"
     filename = "stations.zip"
@@ -141,11 +212,22 @@ def download_station_list():
     return output
 
 
-def parse_station_list():
+def load_local_station_list():
+    STN_LOOKUP = thisdir / "stations.zip"
+    output = []
+    with open(STN_LOOKUP, "rb") as fp:
+        with zipfile.ZipFile(fp) as archive:
+            with archive.open("stations.txt") as txt_file:
+                for line in txt_file:
+                    output.append(line)
+                return output
+
+
+def parse_station_list() -> Iterator[Station]:
     """ Parse stations.txt file """
-    stations = {}
-    txt_file = download_station_list()
-    for i, line in enumerate(txt_file):
+
+    station_list = download_station_list()
+    for i, line in enumerate(station_list):
         if i < 4:
             continue  # Skip headers
         row = line.decode().strip()
@@ -156,7 +238,7 @@ def parse_station_list():
         wmo = row[128:135]
         # If no WMO then skip station
         if ".." in wmo:
-            continue
+            wmo = None
         else:
             wmo = int(wmo)
 
@@ -166,8 +248,42 @@ def parse_station_list():
         lon = float(row[79:88])
         state = row[104:108].strip()
 
-        stations[wmo] = Station(site_id, site_name, lat, lon, state, wmo)
-    return stations
+        yield Station(site_id, site_name, lat, lon, state, wmo)
+
+
+def get_forecast_product_list():
+    """ Get list of history product IDs for WMOs
+        by scraping state overivew pages
+    """
+
+    logging.info("Scraping list of BOM forecast locations")
+    products = dict()
+    for state in STATES:
+        url = f"http://www.bom.gov.au/{state}/forecasts/precis.shtml"
+        r = requests.get(url, timeout=10)
+        pattern = r'/forecasts/(?P<town>.+?).shtml">Detailed'
+        for town in re.findall(pattern, r.text):
+            product = get_forecast_product_id(state, town)
+            if product:
+                products[town] = (product, state)
+    return products
+
+
+def get_forecast_product_id(state: str, town: str) -> Optional[str]:
+    """ Get the product ID from page """
+    url = f"http://www.bom.gov.au/{state}/forecasts/{town}.shtml"
+    r = requests.get(url, timeout=10)
+    pattern = r"Product (ID[A-Z]\d{5})"
+    try:
+        product = re.findall(pattern, r.text)[0]
+    except IndexError:
+        pattern2 = r"Product derived from (ID[A-Z]\d{5}) and (ID[A-Z]\d{5})"
+        try:
+            products = re.findall(pattern2, r.text)[0]
+            product = products[-1]
+        except IndexError:
+            return None
+    return product
 
 
 if __name__ == "__main__":
@@ -180,4 +296,10 @@ if __name__ == "__main__":
     logging.info("Updating obs_stations.json")
     data = get_obs_locations(web_lookup=True)
     with open(OBS_STN_LOOKUP, "w") as fp:
+        json.dump(data, fp, indent=4, sort_keys=True)
+
+    # Update the forecast_stations.json file
+    logging.info("Updating obs_stations.json")
+    data = get_forecast_locations(web_lookup=True)
+    with open(FC_STN_LOOKUP, "w") as fp:
         json.dump(data, fp, indent=4, sort_keys=True)
