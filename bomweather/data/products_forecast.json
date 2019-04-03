@@ -1,0 +1,2454 @@
+{
+    "acacia-hills": [
+        "IDD10207",
+        "nt"
+    ],
+    "adelaide-river": [
+        "IDD10196",
+        "nt"
+    ],
+    "adventure-bay": [
+        "IDT16120",
+        "tas"
+    ],
+    "aireysinlet": [
+        "IDV10701",
+        "vic"
+    ],
+    "albany": [
+        "IDW14110",
+        "wa"
+    ],
+    "albionpark": [
+        "IDN11053",
+        "nsw"
+    ],
+    "ali-curung": [
+        "IDD10207",
+        "nt"
+    ],
+    "alice-springs": [
+        "IDD10161",
+        "nt"
+    ],
+    "alice-springs-airport": [
+        "IDD10207",
+        "nt"
+    ],
+    "alpurrurulam": [
+        "IDD10207",
+        "nt"
+    ],
+    "alyangula": [
+        "IDD10207",
+        "nt"
+    ],
+    "ampilatwatja": [
+        "IDD10207",
+        "nt"
+    ],
+    "angurugu": [
+        "IDD10207",
+        "nt"
+    ],
+    "ararat": [
+        "IDV17101",
+        "vic"
+    ],
+    "argyle": [
+        "IDW13220",
+        "wa"
+    ],
+    "arltunga": [
+        "IDD10207",
+        "nt"
+    ],
+    "armadale": [
+        "IDW12300",
+        "wa"
+    ],
+    "armidale": [
+        "IDN11101",
+        "nsw"
+    ],
+    "atherton": [
+        "IDQ10140",
+        "qld"
+    ],
+    "augathella": [
+        "IDQ10220",
+        "qld"
+    ],
+    "augusta": [
+        "IDW13130",
+        "wa"
+    ],
+    "aurukun": [
+        "IDQ10110",
+        "qld"
+    ],
+    "avalon": [
+        "IDV10701",
+        "vic"
+    ],
+    "avon-downs": [
+        "IDD10207",
+        "nt"
+    ],
+    "ayr": [
+        "IDQ10150",
+        "qld"
+    ],
+    "badgingarra": [
+        "IDW13110",
+        "wa"
+    ],
+    "bairnsdale": [
+        "IDV10704",
+        "vic"
+    ],
+    "balgo-hill": [
+        "IDW13240",
+        "wa"
+    ],
+    "balladonia": [
+        "IDW13200",
+        "wa"
+    ],
+    "ballarat": [
+        "IDV10705",
+        "vic"
+    ],
+    "ballina": [
+        "IDN11024",
+        "nsw"
+    ],
+    "balranald": [
+        "IDN11038",
+        "nsw"
+    ],
+    "barcaldine": [
+        "IDQ10200",
+        "qld"
+    ],
+    "bark-hut": [
+        "IDD10207",
+        "nt"
+    ],
+    "barraba": [
+        "IDN11033",
+        "nsw"
+    ],
+    "barrington-tops": [
+        "IDN11025",
+        "nsw"
+    ],
+    "barrow-creek": [
+        "IDD10207",
+        "nt"
+    ],
+    "barrow-island": [
+        "IDW13210",
+        "wa"
+    ],
+    "barunga": [
+        "IDD10207",
+        "nt"
+    ],
+    "batchelor": [
+        "IDD10196",
+        "nt"
+    ],
+    "batemansbay": [
+        "IDN11102",
+        "nsw"
+    ],
+    "bathurst": [
+        "IDN11030",
+        "nsw"
+    ],
+    "beacon": [
+        "IDW13170",
+        "wa"
+    ],
+    "beaudesert": [
+        "IDQ10090",
+        "qld"
+    ],
+    "bedourie": [
+        "IDQ10210",
+        "qld"
+    ],
+    "beechworth": [
+        "IDV17005",
+        "vic"
+    ],
+    "bega": [
+        "IDN11118",
+        "nsw"
+    ],
+    "bellerive": [
+        "IDT13600",
+        "tas"
+    ],
+    "belyuen": [
+        "IDD10150",
+        "nt"
+    ],
+    "ben-lomond": [
+        "IDT16050",
+        "tas"
+    ],
+    "benalla": [
+        "IDV17005",
+        "vic"
+    ],
+    "bendigo": [
+        "IDV10706",
+        "vic"
+    ],
+    "bermagui": [
+        "IDN11028",
+        "nsw"
+    ],
+    "berrimah": [
+        "IDD10150",
+        "nt"
+    ],
+    "berry-springs": [
+        "IDD10150",
+        "nt"
+    ],
+    "beswick": [
+        "IDD10207",
+        "nt"
+    ],
+    "bicheno": [
+        "IDT16090",
+        "tas"
+    ],
+    "bidyadanga": [
+        "IDW13220",
+        "wa"
+    ],
+    "biloela": [
+        "IDQ10170",
+        "qld"
+    ],
+    "birany-birany": [
+        "IDD10207",
+        "nt"
+    ],
+    "birchip": [
+        "IDV17001",
+        "vic"
+    ],
+    "birdsville": [
+        "IDQ10900",
+        "qld"
+    ],
+    "blackall": [
+        "IDQ10200",
+        "qld"
+    ],
+    "blacktown": [
+        "IDN10064",
+        "nsw"
+    ],
+    "blackwater": [
+        "IDQ10180",
+        "qld"
+    ],
+    "bollon": [
+        "IDQ10220",
+        "qld"
+    ],
+    "bombala": [
+        "IDN11032",
+        "nsw"
+    ],
+    "bondi": [
+        "IDN10064",
+        "nsw"
+    ],
+    "boonah": [
+        "IDQ10090",
+        "qld"
+    ],
+    "borroloola": [
+        "IDD10207",
+        "nt"
+    ],
+    "bothwell": [
+        "IDT16060",
+        "tas"
+    ],
+    "boulia": [
+        "IDQ10210",
+        "qld"
+    ],
+    "bourke": [
+        "IDN11037",
+        "nsw"
+    ],
+    "bowen": [
+        "IDQ10160",
+        "qld"
+    ],
+    "bowral": [
+        "IDN11116",
+        "nsw"
+    ],
+    "boyup-brook": [
+        "IDW13130",
+        "wa"
+    ],
+    "braidwood": [
+        "IDN11031",
+        "nsw"
+    ],
+    "bremer-bay": [
+        "IDW13140",
+        "wa"
+    ],
+    "brewarrina": [
+        "IDN11037",
+        "nsw"
+    ],
+    "bridgetown": [
+        "IDW13130",
+        "wa"
+    ],
+    "bridport": [
+        "IDT16050",
+        "tas"
+    ],
+    "brighton": [
+        "IDT16120",
+        "tas"
+    ],
+    "brisbane": [
+        "IDQ10095",
+        "qld"
+    ],
+    "brisbane-airport": [
+        "IDQ10095",
+        "qld"
+    ],
+    "brokenhill": [
+        "IDN11103",
+        "nsw"
+    ],
+    "brookton": [
+        "IDW13160",
+        "wa"
+    ],
+    "broome": [
+        "IDW14101",
+        "wa"
+    ],
+    "bulahdelah": [
+        "IDN11025",
+        "nsw"
+    ],
+    "bulli": [
+        "IDN11053",
+        "nsw"
+    ],
+    "bulman": [
+        "IDD10207",
+        "nt"
+    ],
+    "bunbury": [
+        "IDW14109",
+        "wa"
+    ],
+    "bundaberg": [
+        "IDQ10901",
+        "qld"
+    ],
+    "burketown": [
+        "IDQ10120",
+        "qld"
+    ],
+    "burnie": [
+        "IDT13501",
+        "tas"
+    ],
+    "burrunggui": [
+        "IDD10195",
+        "nt"
+    ],
+    "busselton": [
+        "IDW14115",
+        "wa"
+    ],
+    "byronbay": [
+        "IDN11024",
+        "nsw"
+    ],
+    "caboolture": [
+        "IDQ10090",
+        "qld"
+    ],
+    "cabramurra": [
+        "IDN11032",
+        "nsw"
+    ],
+    "cairns": [
+        "IDQ10902",
+        "qld"
+    ],
+    "caloundra": [
+        "IDQ10611",
+        "qld"
+    ],
+    "cambelltown": [
+        "IDT13502",
+        "tas"
+    ],
+    "camden": [
+        "IDN10064",
+        "nsw"
+    ],
+    "camooweal": [
+        "IDQ10190",
+        "qld"
+    ],
+    "campania": [
+        "IDT16120",
+        "tas"
+    ],
+    "campbelltown": [
+        "IDN10064",
+        "nsw"
+    ],
+    "canterbury": [
+        "IDN10064",
+        "nsw"
+    ],
+    "capeotway": [
+        "IDV17101",
+        "vic"
+    ],
+    "cardwell": [
+        "IDQ10140",
+        "qld"
+    ],
+    "carmila": [
+        "IDQ10160",
+        "qld"
+    ],
+    "carnamah": [
+        "IDW13110",
+        "wa"
+    ],
+    "carnarvon": [
+        "IDW14106",
+        "wa"
+    ],
+    "casterton": [
+        "IDV17101",
+        "vic"
+    ],
+    "castlemaine": [
+        "IDV17004",
+        "vic"
+    ],
+    "cerberus": [
+        "IDV10702",
+        "vic"
+    ],
+    "cessnock": [
+        "IDN11026",
+        "nsw"
+    ],
+    "charleville": [
+        "IDQ10903",
+        "qld"
+    ],
+    "charlotte-pass": [
+        "IDN11055",
+        "nsw"
+    ],
+    "charters-towers": [
+        "IDQ10904",
+        "qld"
+    ],
+    "chermside": [
+        "IDQ10095",
+        "qld"
+    ],
+    "chinchilla": [
+        "IDQ10230",
+        "qld"
+    ],
+    "clermont": [
+        "IDQ10180",
+        "qld"
+    ],
+    "cloncurry": [
+        "IDQ10190",
+        "qld"
+    ],
+    "cobar": [
+        "IDN11104",
+        "nsw"
+    ],
+    "cobram": [
+        "IDV17003",
+        "vic"
+    ],
+    "cocklebiddy": [
+        "IDW13200",
+        "wa"
+    ],
+    "coen": [
+        "IDQ10110",
+        "qld"
+    ],
+    "coffsharbour": [
+        "IDN11105",
+        "nsw"
+    ],
+    "colac": [
+        "IDV10707",
+        "vic"
+    ],
+    "coles-bay": [
+        "IDT16090",
+        "tas"
+    ],
+    "collie": [
+        "IDW13130",
+        "wa"
+    ],
+    "condobolin": [
+        "IDN11034",
+        "nsw"
+    ],
+    "cooinda": [
+        "IDD10195",
+        "nt"
+    ],
+    "cooktown": [
+        "IDQ10140",
+        "qld"
+    ],
+    "coolalinga": [
+        "IDD10150",
+        "nt"
+    ],
+    "coolangatta": [
+        "IDQ10610",
+        "qld"
+    ],
+    "coolgardie": [
+        "IDW13190",
+        "wa"
+    ],
+    "cooma": [
+        "IDN11119",
+        "nsw"
+    ],
+    "coomera": [
+        "IDQ10610",
+        "qld"
+    ],
+    "coonabarabran": [
+        "IDN11034",
+        "nsw"
+    ],
+    "coonamble": [
+        "IDN11034",
+        "nsw"
+    ],
+    "cootamundra": [
+        "IDN11035",
+        "nsw"
+    ],
+    "coral-bay": [
+        "IDW13180",
+        "wa"
+    ],
+    "corowa": [
+        "IDN11036",
+        "nsw"
+    ],
+    "corrigin": [
+        "IDW13160",
+        "wa"
+    ],
+    "corryong": [
+        "IDV17005",
+        "vic"
+    ],
+    "cowra": [
+        "IDN11034",
+        "nsw"
+    ],
+    "cradlevalley": [
+        "IDT13620",
+        "tas"
+    ],
+    "cranbourne": [
+        "IDV10450",
+        "vic"
+    ],
+    "cressie": [
+        "IDT16030",
+        "tas"
+    ],
+    "cresswell-downs": [
+        "IDD10207",
+        "nt"
+    ],
+    "cronulla": [
+        "IDN10064",
+        "nsw"
+    ],
+    "crookwell": [
+        "IDN11031",
+        "nsw"
+    ],
+    "croydon": [
+        "IDQ10120",
+        "qld"
+    ],
+    "cunderdin": [
+        "IDW13170",
+        "wa"
+    ],
+    "cunnamulla": [
+        "IDQ10220",
+        "qld"
+    ],
+    "currie": [
+        "IDT16010",
+        "tas"
+    ],
+    "curtin-springs": [
+        "IDD10207",
+        "nt"
+    ],
+    "cygnet": [
+        "IDT16120",
+        "tas"
+    ],
+    "daguragu": [
+        "IDD10207",
+        "nt"
+    ],
+    "dalby": [
+        "IDQ10230",
+        "qld"
+    ],
+    "dalwallinu": [
+        "IDW13170",
+        "wa"
+    ],
+    "daly-waters": [
+        "IDD10207",
+        "nt"
+    ],
+    "dampier": [
+        "IDW13210",
+        "wa"
+    ],
+    "dandenong": [
+        "IDV10450",
+        "vic"
+    ],
+    "darwin": [
+        "IDD10150",
+        "nt"
+    ],
+    "darwin-airport": [
+        "IDD10150",
+        "nt"
+    ],
+    "deloraine": [
+        "IDT16020",
+        "tas"
+    ],
+    "denham": [
+        "IDW13180",
+        "wa"
+    ],
+    "deniliquin": [
+        "IDN11036",
+        "nsw"
+    ],
+    "denmark": [
+        "IDW13140",
+        "wa"
+    ],
+    "derby": [
+        "IDW13220",
+        "wa"
+    ],
+    "devonport": [
+        "IDT13503",
+        "tas"
+    ],
+    "dirranbandi": [
+        "IDQ10220",
+        "qld"
+    ],
+    "docker-river": [
+        "IDD10207",
+        "nt"
+    ],
+    "dongara": [
+        "IDW13110",
+        "wa"
+    ],
+    "doomadgee": [
+        "IDQ10120",
+        "qld"
+    ],
+    "dorisvale": [
+        "IDD10207",
+        "nt"
+    ],
+    "dorrigo": [
+        "IDN11025",
+        "nsw"
+    ],
+    "dover": [
+        "IDT16120",
+        "tas"
+    ],
+    "dowerin": [
+        "IDW13170",
+        "wa"
+    ],
+    "drouin": [
+        "IDV17103",
+        "vic"
+    ],
+    "dubbo": [
+        "IDN11106",
+        "nsw"
+    ],
+    "dundee-beach": [
+        "IDD10150",
+        "nt"
+    ],
+    "dysart": [
+        "IDQ10180",
+        "qld"
+    ],
+    "echuca": [
+        "IDV10708",
+        "vic"
+    ],
+    "eden": [
+        "IDN11028",
+        "nsw"
+    ],
+    "edenhope": [
+        "IDV17002",
+        "vic"
+    ],
+    "ellenbrook": [
+        "IDW12300",
+        "wa"
+    ],
+    "elliott": [
+        "IDD10207",
+        "nt"
+    ],
+    "emerald": [
+        "IDQ10906",
+        "qld"
+    ],
+    "eneabba": [
+        "IDW13110",
+        "wa"
+    ],
+    "entrance": [
+        "IDN11052",
+        "nsw"
+    ],
+    "esk": [
+        "IDQ10090",
+        "qld"
+    ],
+    "esperance": [
+        "IDW14111",
+        "wa"
+    ],
+    "eucla": [
+        "IDW13200",
+        "wa"
+    ],
+    "evandale": [
+        "IDT16030",
+        "tas"
+    ],
+    "evans-head": [
+        "IDN11024",
+        "nsw"
+    ],
+    "exeter": [
+        "IDT16030",
+        "tas"
+    ],
+    "exmouth": [
+        "IDW14105",
+        "wa"
+    ],
+    "fallscreek": [
+        "IDV10730",
+        "vic"
+    ],
+    "ferny-grove": [
+        "IDQ10095",
+        "qld"
+    ],
+    "fingal": [
+        "IDT16090",
+        "tas"
+    ],
+    "finke": [
+        "IDD10207",
+        "nt"
+    ],
+    "finley": [
+        "IDN11036",
+        "nsw"
+    ],
+    "fitzroy-crossing": [
+        "IDW13220",
+        "wa"
+    ],
+    "florence-falls": [
+        "IDD10196",
+        "nt"
+    ],
+    "forbes": [
+        "IDN11034",
+        "nsw"
+    ],
+    "forster": [
+        "IDN11025",
+        "nsw"
+    ],
+    "frankston": [
+        "IDV10450",
+        "vic"
+    ],
+    "fremantle": [
+        "IDW12300",
+        "wa"
+    ],
+    "galiwinku": [
+        "IDD10207",
+        "nt"
+    ],
+    "gapuwiyak": [
+        "IDD10207",
+        "nt"
+    ],
+    "gascoyne-junction": [
+        "IDW13180",
+        "wa"
+    ],
+    "gatton": [
+        "IDQ10090",
+        "qld"
+    ],
+    "gayndah": [
+        "IDQ10240",
+        "qld"
+    ],
+    "geelong": [
+        "IDV10701",
+        "vic"
+    ],
+    "geeveston": [
+        "IDT16120",
+        "tas"
+    ],
+    "georgetown": [
+        "IDT16030",
+        "tas"
+    ],
+    "geraldton": [
+        "IDW14107",
+        "wa"
+    ],
+    "gingin": [
+        "IDW13120",
+        "wa"
+    ],
+    "gisborne": [
+        "IDV17102",
+        "vic"
+    ],
+    "gladstone": [
+        "IDQ10907",
+        "qld"
+    ],
+    "gleninnes": [
+        "IDN11029",
+        "nsw"
+    ],
+    "glenorchy": [
+        "IDT13600",
+        "tas"
+    ],
+    "gloucester": [
+        "IDN11025",
+        "nsw"
+    ],
+    "gnowangerup": [
+        "IDW13140",
+        "wa"
+    ],
+    "gold-coast-seaway": [
+        "IDQ10610",
+        "qld"
+    ],
+    "goondiwindi": [
+        "IDQ10908",
+        "qld"
+    ],
+    "gosford": [
+        "IDN11052",
+        "nsw"
+    ],
+    "goulburn": [
+        "IDN11107",
+        "nsw"
+    ],
+    "grafton": [
+        "IDN11024",
+        "nsw"
+    ],
+    "griffith": [
+        "IDN11108",
+        "nsw"
+    ],
+    "gunbalanya": [
+        "IDD10207",
+        "nt"
+    ],
+    "gundagai": [
+        "IDN11035",
+        "nsw"
+    ],
+    "gunlom": [
+        "IDD10195",
+        "nt"
+    ],
+    "gunnedah": [
+        "IDN11033",
+        "nsw"
+    ],
+    "gunyangara": [
+        "IDD10207",
+        "nt"
+    ],
+    "guyra": [
+        "IDN11029",
+        "nsw"
+    ],
+    "gympie": [
+        "IDQ10909",
+        "qld"
+    ],
+    "halls-creek": [
+        "IDW13220",
+        "wa"
+    ],
+    "hamilton": [
+        "IDV10710",
+        "vic"
+    ],
+    "hamilton-island": [
+        "IDQ10160",
+        "qld"
+    ],
+    "harvey": [
+        "IDW13130",
+        "wa"
+    ],
+    "hay": [
+        "IDN11036",
+        "nsw"
+    ],
+    "hermannsburg": [
+        "IDD10207",
+        "nt"
+    ],
+    "hervey-bay": [
+        "IDQ10910",
+        "qld"
+    ],
+    "heywood": [
+        "IDV17101",
+        "vic"
+    ],
+    "hobart": [
+        "IDT13600",
+        "tas"
+    ],
+    "hopetoun": [
+        "IDW13150",
+        "wa"
+    ],
+    "hornsby": [
+        "IDN10064",
+        "nsw"
+    ],
+    "horsham": [
+        "IDV10711",
+        "vic"
+    ],
+    "howard-springs": [
+        "IDD10150",
+        "nt"
+    ],
+    "hughenden": [
+        "IDQ10130",
+        "qld"
+    ],
+    "humpty-doo": [
+        "IDD10150",
+        "nt"
+    ],
+    "huonville": [
+        "IDT16120",
+        "tas"
+    ],
+    "huskisson": [
+        "IDN11027",
+        "nsw"
+    ],
+    "hyden": [
+        "IDW13160",
+        "wa"
+    ],
+    "ingham": [
+        "IDQ10150",
+        "qld"
+    ],
+    "injune": [
+        "IDQ10220",
+        "qld"
+    ],
+    "innisfail": [
+        "IDQ10140",
+        "qld"
+    ],
+    "inverell": [
+        "IDN11029",
+        "nsw"
+    ],
+    "ipswich": [
+        "IDQ10911",
+        "qld"
+    ],
+    "isisford": [
+        "IDQ10200",
+        "qld"
+    ],
+    "ivanhoe": [
+        "IDN11038",
+        "nsw"
+    ],
+    "jabiru": [
+        "IDD10202",
+        "nt"
+    ],
+    "jenolan-caves": [
+        "IDN11030",
+        "nsw"
+    ],
+    "jerramungup": [
+        "IDW13140",
+        "wa"
+    ],
+    "jervois": [
+        "IDD10207",
+        "nt"
+    ],
+    "jim-jim-falls": [
+        "IDD10195",
+        "nt"
+    ],
+    "jindabyne": [
+        "IDN11032",
+        "nsw"
+    ],
+    "joondalup": [
+        "IDW12300",
+        "wa"
+    ],
+    "julia-creek": [
+        "IDQ10190",
+        "qld"
+    ],
+    "junee": [
+        "IDN11036",
+        "nsw"
+    ],
+    "jurien-bay": [
+        "IDW13110",
+        "wa"
+    ],
+    "kalamunda": [
+        "IDW12300",
+        "wa"
+    ],
+    "kalbarri": [
+        "IDW13110",
+        "wa"
+    ],
+    "kalgoorlie": [
+        "IDW14108",
+        "wa"
+    ],
+    "kalumburu": [
+        "IDW13220",
+        "wa"
+    ],
+    "kambalda": [
+        "IDW13190",
+        "wa"
+    ],
+    "karratha": [
+        "IDW14103",
+        "wa"
+    ],
+    "katanning": [
+        "IDW13160",
+        "wa"
+    ],
+    "katherine": [
+        "IDD10200",
+        "nt"
+    ],
+    "katoomba": [
+        "IDN11109",
+        "nsw"
+    ],
+    "kellerberrin": [
+        "IDW13170",
+        "wa"
+    ],
+    "kempsey": [
+        "IDN11025",
+        "nsw"
+    ],
+    "kenmore": [
+        "IDQ10095",
+        "qld"
+    ],
+    "kerang": [
+        "IDV17001",
+        "vic"
+    ],
+    "kiama": [
+        "IDN11027",
+        "nsw"
+    ],
+    "kingaroy": [
+        "IDQ10240",
+        "qld"
+    ],
+    "kingston": [
+        "IDT13600",
+        "tas"
+    ],
+    "kiwirrkurra": [
+        "IDW13240",
+        "wa"
+    ],
+    "kowanyama": [
+        "IDQ10120",
+        "qld"
+    ],
+    "kulgera": [
+        "IDD10207",
+        "nt"
+    ],
+    "kununurra": [
+        "IDW14112",
+        "wa"
+    ],
+    "kyabram": [
+        "IDV17003",
+        "vic"
+    ],
+    "kyneton": [
+        "IDV17102",
+        "vic"
+    ],
+    "laidley": [
+        "IDQ10090",
+        "qld"
+    ],
+    "lajamanu": [
+        "IDD10207",
+        "nt"
+    ],
+    "lake-cargelligo": [
+        "IDN11034",
+        "nsw"
+    ],
+    "lake-grace": [
+        "IDW13160",
+        "wa"
+    ],
+    "lake-mountain": [
+        "IDV17004",
+        "vic"
+    ],
+    "lake-mungo": [
+        "IDN11038",
+        "nsw"
+    ],
+    "lakeeildon": [
+        "IDV17004",
+        "vic"
+    ],
+    "lakesentrance": [
+        "IDV17104",
+        "vic"
+    ],
+    "lakestclair": [
+        "IDT13620",
+        "tas"
+    ],
+    "lancelin": [
+        "IDW13120",
+        "wa"
+    ],
+    "latrobe": [
+        "IDT16020",
+        "tas"
+    ],
+    "latrobevalley": [
+        "IDV10712",
+        "vic"
+    ],
+    "launceston": [
+        "IDT13610",
+        "tas"
+    ],
+    "laura": [
+        "IDQ10110",
+        "qld"
+    ],
+    "laverton": [
+        "IDW13190",
+        "wa"
+    ],
+    "leanyer": [
+        "IDD10207",
+        "nt"
+    ],
+    "leinster": [
+        "IDW13190",
+        "wa"
+    ],
+    "leongatha": [
+        "IDV17103",
+        "vic"
+    ],
+    "leonora": [
+        "IDW13190",
+        "wa"
+    ],
+    "liawenee": [
+        "IDT16060",
+        "tas"
+    ],
+    "lismore": [
+        "IDN11110",
+        "nsw"
+    ],
+    "lithgow": [
+        "IDN11030",
+        "nsw"
+    ],
+    "liverpool": [
+        "IDN10064",
+        "nsw"
+    ],
+    "lockhart-river": [
+        "IDQ10110",
+        "qld"
+    ],
+    "logan-central": [
+        "IDQ10090",
+        "qld"
+    ],
+    "lombadina": [
+        "IDW13220",
+        "wa"
+    ],
+    "longreach": [
+        "IDQ10913",
+        "qld"
+    ],
+    "mackay": [
+        "IDQ10914",
+        "qld"
+    ],
+    "maitland": [
+        "IDN11026",
+        "nsw"
+    ],
+    "maleny": [
+        "IDQ10611",
+        "qld"
+    ],
+    "mallacoota": [
+        "IDV17104",
+        "vic"
+    ],
+    "mandurah": [
+        "IDW14114",
+        "wa"
+    ],
+    "maningrida": [
+        "IDD10205",
+        "nt"
+    ],
+    "manjimup": [
+        "IDW13130",
+        "wa"
+    ],
+    "manly": [
+        "IDQ10095",
+        "qld"
+    ],
+    "mansfield": [
+        "IDV17005",
+        "vic"
+    ],
+    "marble-bar": [
+        "IDW13210",
+        "wa"
+    ],
+    "mareeba": [
+        "IDQ10140",
+        "qld"
+    ],
+    "margaret-river": [
+        "IDW13130",
+        "wa"
+    ],
+    "maria-island": [
+        "IDT16090",
+        "tas"
+    ],
+    "maroochydore": [
+        "IDQ10611",
+        "qld"
+    ],
+    "marrawah": [
+        "IDT16020",
+        "tas"
+    ],
+    "maryborough": [
+        "IDV17004",
+        "vic"
+    ],
+    "mascot": [
+        "IDN10064",
+        "nsw"
+    ],
+    "mataranka": [
+        "IDD10207",
+        "nt"
+    ],
+    "maydena": [
+        "IDT16070",
+        "tas"
+    ],
+    "meekatharra": [
+        "IDW14113",
+        "wa"
+    ],
+    "melaleuca": [
+        "IDT16070",
+        "tas"
+    ],
+    "melbourne": [
+        "IDV10450",
+        "vic"
+    ],
+    "melton": [
+        "IDV10450",
+        "vic"
+    ],
+    "menindee": [
+        "IDN11038",
+        "nsw"
+    ],
+    "merimbula": [
+        "IDN11028",
+        "nsw"
+    ],
+    "merredin": [
+        "IDW13170",
+        "wa"
+    ],
+    "midland": [
+        "IDW12300",
+        "wa"
+    ],
+    "mildura": [
+        "IDV10714",
+        "vic"
+    ],
+    "miles": [
+        "IDQ10230",
+        "qld"
+    ],
+    "milikapiti": [
+        "IDD10207",
+        "nt"
+    ],
+    "milingimbi": [
+        "IDD10207",
+        "nt"
+    ],
+    "minjilang": [
+        "IDD10207",
+        "nt"
+    ],
+    "moe": [
+        "IDV17103",
+        "vic"
+    ],
+    "mona-vale": [
+        "IDN10064",
+        "nsw"
+    ],
+    "monolith-valley": [
+        "IDN11028",
+        "nsw"
+    ],
+    "monto": [
+        "IDQ10240",
+        "qld"
+    ],
+    "moora": [
+        "IDW13110",
+        "wa"
+    ],
+    "moorabbin": [
+        "IDV10450",
+        "vic"
+    ],
+    "moranbah": [
+        "IDQ10180",
+        "qld"
+    ],
+    "morawa": [
+        "IDW13110",
+        "wa"
+    ],
+    "moree": [
+        "IDN11033",
+        "nsw"
+    ],
+    "mornington": [
+        "IDV10702",
+        "vic"
+    ],
+    "mornington-island": [
+        "IDQ10120",
+        "qld"
+    ],
+    "mortlake": [
+        "IDV17101",
+        "vic"
+    ],
+    "mount-augustus": [
+        "IDW13180",
+        "wa"
+    ],
+    "mount-barker": [
+        "IDW13140",
+        "wa"
+    ],
+    "mount-field": [
+        "IDT16070",
+        "tas"
+    ],
+    "mount-gravatt": [
+        "IDQ10095",
+        "qld"
+    ],
+    "mount-isa": [
+        "IDQ10916",
+        "qld"
+    ],
+    "mount-magnet": [
+        "IDW13180",
+        "wa"
+    ],
+    "mountbawbaw": [
+        "IDV17103",
+        "vic"
+    ],
+    "mountbuller": [
+        "IDV10715",
+        "vic"
+    ],
+    "mountdandenong": [
+        "IDV10716",
+        "vic"
+    ],
+    "mounthotham": [
+        "IDV10717",
+        "vic"
+    ],
+    "mowbray": [
+        "IDT13610",
+        "tas"
+    ],
+    "mtwellington": [
+        "IDT16120",
+        "tas"
+    ],
+    "mudgee": [
+        "IDN11030",
+        "nsw"
+    ],
+    "mukinbudin": [
+        "IDW13170",
+        "wa"
+    ],
+    "mullewa": [
+        "IDW13110",
+        "wa"
+    ],
+    "murchison": [
+        "IDW13180",
+        "wa"
+    ],
+    "murwillumbah": [
+        "IDN11024",
+        "nsw"
+    ],
+    "muswellbrook": [
+        "IDN11026",
+        "nsw"
+    ],
+    "nambour": [
+        "IDQ10611",
+        "qld"
+    ],
+    "nambucca-heads": [
+        "IDN11025",
+        "nsw"
+    ],
+    "narooma": [
+        "IDN11028",
+        "nsw"
+    ],
+    "narrabri": [
+        "IDN11033",
+        "nsw"
+    ],
+    "narrandera": [
+        "IDN11036",
+        "nsw"
+    ],
+    "narrogin": [
+        "IDW13160",
+        "wa"
+    ],
+    "narromine": [
+        "IDN11034",
+        "nsw"
+    ],
+    "nauiyu": [
+        "IDD10207",
+        "nt"
+    ],
+    "nelson-bay": [
+        "IDN11026",
+        "nsw"
+    ],
+    "nerang": [
+        "IDQ10610",
+        "qld"
+    ],
+    "new-pelion-hut": [
+        "IDT13620",
+        "tas"
+    ],
+    "newcastle": [
+        "IDN11051",
+        "nsw"
+    ],
+    "newman": [
+        "IDW14104",
+        "wa"
+    ],
+    "newnorfolk": [
+        "IDT13504",
+        "tas"
+    ],
+    "newry": [
+        "IDD10207",
+        "nt"
+    ],
+    "ngayawili": [
+        "IDD10207",
+        "nt"
+    ],
+    "ngukurr": [
+        "IDD10207",
+        "nt"
+    ],
+    "nhill": [
+        "IDV17002",
+        "vic"
+    ],
+    "nhulunbuy": [
+        "IDD10199",
+        "nt"
+    ],
+    "nhulunbuy-airport": [
+        "IDD10207",
+        "nt"
+    ],
+    "nightcliff": [
+        "IDD10150",
+        "nt"
+    ],
+    "noonamah": [
+        "IDD10150",
+        "nt"
+    ],
+    "noosa-heads": [
+        "IDQ10611",
+        "qld"
+    ],
+    "normanton": [
+        "IDQ10120",
+        "qld"
+    ],
+    "norseman": [
+        "IDW13190",
+        "wa"
+    ],
+    "northam": [
+        "IDW13170",
+        "wa"
+    ],
+    "northampton": [
+        "IDW13110",
+        "wa"
+    ],
+    "nowra": [
+        "IDN11027",
+        "nsw"
+    ],
+    "numbulwar": [
+        "IDD10207",
+        "nt"
+    ],
+    "nyngan": [
+        "IDN11034",
+        "nsw"
+    ],
+    "oakey": [
+        "IDQ10230",
+        "qld"
+    ],
+    "oatlands": [
+        "IDT16080",
+        "tas"
+    ],
+    "oberon": [
+        "IDN11030",
+        "nsw"
+    ],
+    "omeo": [
+        "IDV17104",
+        "vic"
+    ],
+    "onslow": [
+        "IDW13210",
+        "wa"
+    ],
+    "orange": [
+        "IDN11111",
+        "nsw"
+    ],
+    "orbost": [
+        "IDV10718",
+        "vic"
+    ],
+    "orford": [
+        "IDT16090",
+        "tas"
+    ],
+    "ouse": [
+        "IDT16110",
+        "tas"
+    ],
+    "ouyen": [
+        "IDV17001",
+        "vic"
+    ],
+    "oxley": [
+        "IDQ10095",
+        "qld"
+    ],
+    "pakenham": [
+        "IDV10450",
+        "vic"
+    ],
+    "palmerston": [
+        "IDD10206",
+        "nt"
+    ],
+    "palmerville": [
+        "IDQ10110",
+        "qld"
+    ],
+    "palumpa": [
+        "IDD10207",
+        "nt"
+    ],
+    "pannawonica": [
+        "IDW13210",
+        "wa"
+    ],
+    "papunya": [
+        "IDD10207",
+        "nt"
+    ],
+    "paraburdoo": [
+        "IDW13210",
+        "wa"
+    ],
+    "parkes": [
+        "IDN11034",
+        "nsw"
+    ],
+    "parramatta": [
+        "IDN10064",
+        "nsw"
+    ],
+    "paynes-find": [
+        "IDW13180",
+        "wa"
+    ],
+    "pemberton": [
+        "IDW13130",
+        "wa"
+    ],
+    "penguin": [
+        "IDT16020",
+        "tas"
+    ],
+    "penrith": [
+        "IDN10064",
+        "nsw"
+    ],
+    "peppimenarti": [
+        "IDD10207",
+        "nt"
+    ],
+    "perisher": [
+        "IDN11055",
+        "nsw"
+    ],
+    "perth": [
+        "IDW12300",
+        "wa"
+    ],
+    "phillipisland": [
+        "IDV17102",
+        "vic"
+    ],
+    "pine-creek": [
+        "IDD10207",
+        "nt"
+    ],
+    "pinjarra": [
+        "IDW13120",
+        "wa"
+    ],
+    "pirlangimpi": [
+        "IDD10207",
+        "nt"
+    ],
+    "port-douglas": [
+        "IDQ10140",
+        "qld"
+    ],
+    "port-hedland": [
+        "IDW14102",
+        "wa"
+    ],
+    "port-kembla": [
+        "IDN11053",
+        "nsw"
+    ],
+    "port-sorell": [
+        "IDT16020",
+        "tas"
+    ],
+    "portarthur": [
+        "IDT16120",
+        "tas"
+    ],
+    "portfairy": [
+        "IDV17101",
+        "vic"
+    ],
+    "portland": [
+        "IDV17101",
+        "vic"
+    ],
+    "portmacquarie": [
+        "IDN11112",
+        "nsw"
+    ],
+    "proserpine": [
+        "IDQ10160",
+        "qld"
+    ],
+    "prospect": [
+        "IDT13610",
+        "tas"
+    ],
+    "queanbeyan": [
+        "IDN11031",
+        "nsw"
+    ],
+    "queenstown": [
+        "IDT13505",
+        "tas"
+    ],
+    "quilpie": [
+        "IDQ10210",
+        "qld"
+    ],
+    "quirindi": [
+        "IDN11033",
+        "nsw"
+    ],
+    "rabbit-flat": [
+        "IDD10207",
+        "nt"
+    ],
+    "railton": [
+        "IDT16020",
+        "tas"
+    ],
+    "ramingining": [
+        "IDD10207",
+        "nt"
+    ],
+    "ravensthorpe": [
+        "IDW13150",
+        "wa"
+    ],
+    "raymond-terrace": [
+        "IDN11026",
+        "nsw"
+    ],
+    "redcliffe": [
+        "IDQ10090",
+        "qld"
+    ],
+    "redesdale": [
+        "IDV17003",
+        "vic"
+    ],
+    "rhyll": [
+        "IDV17102",
+        "vic"
+    ],
+    "richmond": [
+        "IDT16120",
+        "tas"
+    ],
+    "robina": [
+        "IDQ10610",
+        "qld"
+    ],
+    "rockhampton": [
+        "IDQ10918",
+        "qld"
+    ],
+    "rockingham": [
+        "IDW12300",
+        "wa"
+    ],
+    "roebourne": [
+        "IDW13210",
+        "wa"
+    ],
+    "rolleston": [
+        "IDQ10180",
+        "qld"
+    ],
+    "roma": [
+        "IDQ10919",
+        "qld"
+    ],
+    "rosebery": [
+        "IDT16070",
+        "tas"
+    ],
+    "ross": [
+        "IDT16080",
+        "tas"
+    ],
+    "ross-river": [
+        "IDD10207",
+        "nt"
+    ],
+    "rottnest-island": [
+        "IDW12300",
+        "wa"
+    ],
+    "rutherglen": [
+        "IDV17005",
+        "vic"
+    ],
+    "sale": [
+        "IDV10719",
+        "vic"
+    ],
+    "salmon-gums": [
+        "IDW13150",
+        "wa"
+    ],
+    "santa-teresa": [
+        "IDD10207",
+        "nt"
+    ],
+    "scarborough": [
+        "IDW12300",
+        "wa"
+    ],
+    "scone": [
+        "IDN11026",
+        "nsw"
+    ],
+    "scoresby": [
+        "IDV10450",
+        "vic"
+    ],
+    "scottsdale": [
+        "IDT13506",
+        "tas"
+    ],
+    "selwyn": [
+        "IDN11032",
+        "nsw"
+    ],
+    "seymour": [
+        "IDV10721",
+        "vic"
+    ],
+    "sheffield": [
+        "IDT16020",
+        "tas"
+    ],
+    "shepparton": [
+        "IDV10722",
+        "vic"
+    ],
+    "singleton": [
+        "IDN11026",
+        "nsw"
+    ],
+    "smithton": [
+        "IDT13507",
+        "tas"
+    ],
+    "sorell": [
+        "IDT16120",
+        "tas"
+    ],
+    "south-west-rocks": [
+        "IDN11025",
+        "nsw"
+    ],
+    "southern-cross": [
+        "IDW13170",
+        "wa"
+    ],
+    "springsure": [
+        "IDQ10180",
+        "qld"
+    ],
+    "springwood": [
+        "IDN11030",
+        "nsw"
+    ],
+    "st-george": [
+        "IDQ10220",
+        "qld"
+    ],
+    "st-marys": [
+        "IDT16090",
+        "tas"
+    ],
+    "stanley": [
+        "IDT16020",
+        "tas"
+    ],
+    "stanthorpe": [
+        "IDQ10230",
+        "qld"
+    ],
+    "stawell": [
+        "IDV17002",
+        "vic"
+    ],
+    "sthelens": [
+        "IDT13508",
+        "tas"
+    ],
+    "strahan": [
+        "IDT13509",
+        "tas"
+    ],
+    "strathgordon": [
+        "IDT16070",
+        "tas"
+    ],
+    "sunbury": [
+        "IDV10450",
+        "vic"
+    ],
+    "surat": [
+        "IDQ10220",
+        "qld"
+    ],
+    "surfers-paradise": [
+        "IDQ10610",
+        "qld"
+    ],
+    "surprise-creek-falls": [
+        "IDD10196",
+        "nt"
+    ],
+    "swanbourne": [
+        "IDW12300",
+        "wa"
+    ],
+    "swanhill": [
+        "IDV10723",
+        "vic"
+    ],
+    "swansea": [
+        "IDT13510",
+        "tas"
+    ],
+    "sydney": [
+        "IDN10064",
+        "nsw"
+    ],
+    "sydney-olympic-park": [
+        "IDN10064",
+        "nsw"
+    ],
+    "tambo": [
+        "IDQ10200",
+        "qld"
+    ],
+    "tamworth": [
+        "IDN11113",
+        "nsw"
+    ],
+    "taree": [
+        "IDN11117",
+        "nsw"
+    ],
+    "taroom": [
+        "IDQ10180",
+        "qld"
+    ],
+    "tarraleah": [
+        "IDT16060",
+        "tas"
+    ],
+    "tatura": [
+        "IDV17003",
+        "vic"
+    ],
+    "telfer": [
+        "IDW13210",
+        "wa"
+    ],
+    "temora": [
+        "IDN11034",
+        "nsw"
+    ],
+    "tennant-creek": [
+        "IDD10203",
+        "nt"
+    ],
+    "tenterfield": [
+        "IDN11029",
+        "nsw"
+    ],
+    "terreyhills": [
+        "IDN10064",
+        "nsw"
+    ],
+    "thargomindah": [
+        "IDQ10210",
+        "qld"
+    ],
+    "the-corner": [
+        "IDT16040",
+        "tas"
+    ],
+    "thredbo": [
+        "IDN11055",
+        "nsw"
+    ],
+    "thursday-island": [
+        "IDQ10110",
+        "qld"
+    ],
+    "ti-tree": [
+        "IDD10207",
+        "nt"
+    ],
+    "tibooburra": [
+        "IDN11037",
+        "nsw"
+    ],
+    "timber-creek": [
+        "IDD10207",
+        "nt"
+    ],
+    "titjikala": [
+        "IDD10207",
+        "nt"
+    ],
+    "tjaynera-falls": [
+        "IDD10196",
+        "nt"
+    ],
+    "tom-price": [
+        "IDW13210",
+        "wa"
+    ],
+    "toowoomba": [
+        "IDQ10922",
+        "qld"
+    ],
+    "toronto": [
+        "IDN11051",
+        "nsw"
+    ],
+    "torquay": [
+        "IDV10701",
+        "vic"
+    ],
+    "townsville": [
+        "IDQ10923",
+        "qld"
+    ],
+    "traralgon": [
+        "IDV17103",
+        "vic"
+    ],
+    "tullamarine": [
+        "IDV10450",
+        "vic"
+    ],
+    "tumbarumba": [
+        "IDN11035",
+        "nsw"
+    ],
+    "tumut": [
+        "IDN11035",
+        "nsw"
+    ],
+    "tunnack": [
+        "IDT16080",
+        "tas"
+    ],
+    "tweedheads": [
+        "IDN11121",
+        "nsw"
+    ],
+    "twin-falls": [
+        "IDD10195",
+        "nt"
+    ],
+    "ubirr": [
+        "IDD10195",
+        "nt"
+    ],
+    "ulladulla": [
+        "IDN11028",
+        "nsw"
+    ],
+    "uluru": [
+        "IDD10197",
+        "nt"
+    ],
+    "ulverstone": [
+        "IDT13511",
+        "tas"
+    ],
+    "urandangi": [
+        "IDQ10190",
+        "qld"
+    ],
+    "wadeye": [
+        "IDD10204",
+        "nt"
+    ],
+    "wagait-beach": [
+        "IDD10150",
+        "nt"
+    ],
+    "waggawagga": [
+        "IDN11114",
+        "nsw"
+    ],
+    "wagin": [
+        "IDW13160",
+        "wa"
+    ],
+    "walcha": [
+        "IDN11029",
+        "nsw"
+    ],
+    "walgett": [
+        "IDN11033",
+        "nsw"
+    ],
+    "wallal": [
+        "IDW13220",
+        "wa"
+    ],
+    "wallsend": [
+        "IDN11051",
+        "nsw"
+    ],
+    "walpole": [
+        "IDW13130",
+        "wa"
+    ],
+    "wangaratta": [
+        "IDV10725",
+        "vic"
+    ],
+    "wangi-falls": [
+        "IDD10196",
+        "nt"
+    ],
+    "waratah": [
+        "IDT16070",
+        "tas"
+    ],
+    "warburton": [
+        "IDW13230",
+        "wa"
+    ],
+    "warialda": [
+        "IDN11037",
+        "nsw"
+    ],
+    "warracknabeal": [
+        "IDV17002",
+        "vic"
+    ],
+    "warragul": [
+        "IDV17103",
+        "vic"
+    ],
+    "warrnambool": [
+        "IDV10726",
+        "vic"
+    ],
+    "warruwi": [
+        "IDD10207",
+        "nt"
+    ],
+    "warwick": [
+        "IDQ10230",
+        "qld"
+    ],
+    "watarrka": [
+        "IDD10207",
+        "nt"
+    ],
+    "watsonia": [
+        "IDV10450",
+        "vic"
+    ],
+    "wauchope": [
+        "IDN11025",
+        "nsw"
+    ],
+    "wee-waa": [
+        "IDN11033",
+        "nsw"
+    ],
+    "weeaproinah": [
+        "IDV17101",
+        "vic"
+    ],
+    "weipa": [
+        "IDQ10925",
+        "qld"
+    ],
+    "wellington": [
+        "IDN11030",
+        "nsw"
+    ],
+    "wentworth": [
+        "IDN11038",
+        "nsw"
+    ],
+    "west-wyalong": [
+        "IDN11034",
+        "nsw"
+    ],
+    "whitemark": [
+        "IDT16040",
+        "tas"
+    ],
+    "wilcannia": [
+        "IDN11037",
+        "nsw"
+    ],
+    "wilsonspromontory": [
+        "IDV17103",
+        "vic"
+    ],
+    "wiluna": [
+        "IDW13190",
+        "wa"
+    ],
+    "wind-harbour": [
+        "IDW13130",
+        "wa"
+    ],
+    "windorah": [
+        "IDQ10210",
+        "qld"
+    ],
+    "winton": [
+        "IDQ10200",
+        "qld"
+    ],
+    "wodonga": [
+        "IDV10703",
+        "vic"
+    ],
+    "wollogorang": [
+        "IDD10207",
+        "nt"
+    ],
+    "wollongong": [
+        "IDN11053",
+        "nsw"
+    ],
+    "wongan-hills": [
+        "IDW13170",
+        "wa"
+    ],
+    "wonthaggi": [
+        "IDV10728",
+        "vic"
+    ],
+    "woy-woy": [
+        "IDN11052",
+        "nsw"
+    ],
+    "wulungurru": [
+        "IDD10207",
+        "nt"
+    ],
+    "wurrumiyanga": [
+        "IDD10209",
+        "nt"
+    ],
+    "wyndham": [
+        "IDW13220",
+        "wa"
+    ],
+    "wynyard": [
+        "IDT16020",
+        "tas"
+    ],
+    "wyong": [
+        "IDN11052",
+        "nsw"
+    ],
+    "yalgoo": [
+        "IDW13180",
+        "wa"
+    ],
+    "yallingup": [
+        "IDW13130",
+        "wa"
+    ],
+    "yamba": [
+        "IDN11024",
+        "nsw"
+    ],
+    "yanchep": [
+        "IDW12300",
+        "wa"
+    ],
+    "yarraglen": [
+        "IDV10450",
+        "vic"
+    ],
+    "yarrawonga": [
+        "IDV17003",
+        "vic"
+    ],
+    "yass": [
+        "IDN11031",
+        "nsw"
+    ],
+    "yeppoon": [
+        "IDQ10170",
+        "qld"
+    ],
+    "yirrkala": [
+        "IDD10207",
+        "nt"
+    ],
+    "york": [
+        "IDW13170",
+        "wa"
+    ],
+    "young": [
+        "IDN11035",
+        "nsw"
+    ],
+    "yuendumu": [
+        "IDD10207",
+        "nt"
+    ],
+    "yulara": [
+        "IDD10201",
+        "nt"
+    ],
+    "zeehan": [
+        "IDT16070",
+        "tas"
+    ]
+}

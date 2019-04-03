@@ -1,5 +1,8 @@
 """ bomweather - Load weather data from BOM website """
 
+
+import logging
+from logging import NullHandler
 from bomweather.stations import get_obs_locations
 from bomweather.stations import closest_obs_station
 from bomweather.stations import get_forecast_locations
@@ -17,3 +20,6 @@ __all__ = [
     "Forecast",
     "ForecastPeriod",
 ]
+
+# Set default logging handler to avoid "No handler found" warnings.
+logging.getLogger(__name__).addHandler(NullHandler())

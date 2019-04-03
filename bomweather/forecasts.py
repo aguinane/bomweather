@@ -1,11 +1,8 @@
-import logging
 import ftplib
 import io
 from typing import NamedTuple
 from typing import Optional
 from datetime import datetime
-import ftplib
-import requests
 import pytz
 from xml.etree import ElementTree
 from dateutil.parser import parse

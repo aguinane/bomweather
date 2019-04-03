@@ -1,2 +1,3 @@
-include bomweather/obs_stations.json
-include bomweather/forecast_stations.json
+include bomweather/data/stations.txt
+include bomweather/data/products_obs.json
+include bomweather/data/products_forecast.json

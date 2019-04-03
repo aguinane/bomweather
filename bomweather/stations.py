@@ -1,33 +1,23 @@
 """ bomweather.stations
 
-    Scrape the BOM website to get a list of stations with weather observations
-    http://www.bom.gov.au/catalogue/observations/about-weather-observations.shtml
-
-    To get the station location, they are compared against this metedata table:
-    ftp://ftp.bom.gov.au/anon2/home/ncc/metadata/sitelists/
-
+    Get list of stations
     Only sites with a World Meteorological Organisation (WMO) ID are considered
 
 """
 
 import logging
 import os
-import ftplib
-import zipfile
 import re
 import json
-import io
 from math import cos, asin, sqrt
 from typing import NamedTuple
-from typing import Tuple, Optional, Iterator, List
+from typing import Tuple, Optional, Iterator, List, Dict
 from pathlib import Path
 import requests
 
-STATES = ["ant", "nsw", "nt", "qld", "tas", "vic", "wa"]
-
-thisdir = Path(os.path.dirname(os.path.abspath(__file__)))
-OBS_STN_LOOKUP = thisdir / "obs_stations.json"
-FC_STN_LOOKUP = thisdir / "forecast_stations.json"
+from bomweather.scrape_products import get_obs_products
+from bomweather.scrape_products import get_forecast_products
+from bomweather.scrape_stations import get_station_list
 
 
 class Station(NamedTuple):
@@ -38,89 +28,141 @@ class Station(NamedTuple):
     lat: float
     lon: float
     state: str
-    wmo: int
+    wmo: str
+    obs_product: str
 
 
-def get_obs_locations(web_lookup=False) -> dict:
+def get_obs_locations(rescrape=False) -> Dict[str, Station]:
     """ Get list of observation locations
 
-        :param web_lookup: Should it re-download station list from web
+        :param rescrape: Should it re-download station list from web
     """
 
-    if OBS_STN_LOOKUP.is_file() and not web_lookup:
-        # Load existing station list
-        with open(OBS_STN_LOOKUP, "r") as fp:
-            return json.load(fp)
-
     data = {}
-    products = get_observations_product_list()
-    stations = list(parse_station_list())
+    stations = get_obs_stations(rescrape)
     for station in stations:
-        wmo = station.wmo
-        if wmo:
-            try:
-                product = products[wmo]
-            except KeyError:
-                continue
-            data[wmo] = {
-                "wmo": wmo,
-                "product": product,
-                "lat": station.lat,
-                "lon": station.lon,
-                "state": station.state,
-                "site_name": station.site_name,
-            }
+        data[station.wmo] = station
     return data
 
 
-def get_forecast_locations(web_lookup=False) -> dict:
-    """ Get list of forecast locations
+def get_obs_stations(rescrape: bool = False) -> Iterator[Station]:
+    """ Parse stations.txt file """
 
-        :param web_lookup: Should it re-download station list from web
+    products = get_obs_products(rescrape)
+    station_list = get_station_list(rescrape)
+    for i, line in enumerate(station_list):
+        if i < 4:
+            continue  # Skip headers
+        if type(line) == str:
+            row = line.strip()
+        else:
+            row = line.decode().strip()
+        if len(row) < 20:
+            # Empty line means we are at the footer
+            break
+
+        wmo = row[128:135].strip()
+        # If no WMO then skip station
+        if ".." in wmo:
+            wmo = None
+            continue
+
+        site_id = row[0:6]
+        site_name = row[12:55].strip()
+        lat = float(row[70:78])
+        lon = float(row[79:88])
+        state = row[104:108].strip()
+
+        if wmo not in products.keys():
+            continue
+        obs_product = products[wmo]
+
+        yield Station(site_id, site_name, lat, lon, state, wmo, obs_product)
+
+
+def closest_obs_station(lat: float, lon: float, rescrape: bool = False):
+    """ Get the closest station for a location
+
+    :param lat: Latitude
+    :param lon: Longitude
+    :param rescrape: Should it re-download station list from web
     """
 
-    if FC_STN_LOOKUP.is_file() and not web_lookup:
-        # Load existing station list
-        with open(FC_STN_LOOKUP, "r") as fp:
-            return json.load(fp)
+    stations = get_obs_locations(rescrape)
+    closest_wmo = min(
+        stations,
+        key=lambda wmo: geo_distance(
+            lat, lon, stations[wmo].lat, stations[wmo].lon
+        ),
+    )
+    return stations[closest_wmo]
+
+
+def closest_forecast_location(lat: float, lon: float, rescrape: bool = False):
+    """ Get the closest station for a location
+
+    :param lat: Latitude
+    :param lon: Longitude
+    :param rescrape: Should it re-download station list from web
+    """
+
+    stations = get_forecast_locations(rescrape)
+    closest_product = min(
+        stations,
+        key=lambda product: geo_distance(
+            lat, lon, stations[product].lat, stations[product].lon
+        ),
+    )
+    return stations[closest_product]
+
+
+class ForecastStation(NamedTuple):
+    """ Weather Observations """
+
+    site_name: str
+    product: str
+    lat: float
+    lon: float
+    state: str
+
+
+def get_forecast_locations(rescrape: bool = False) -> Dict[str, ForecastStation]:
+    """ Get list of forecast locations
+
+        :param rescrape: Should it re-download station list from web
+    """
 
     data = {}
-    products = get_forecast_product_list()
-    stations = list(parse_station_list())
+    products = get_forecast_products(rescrape)
+    stations = get_obs_locations(rescrape)
     for town in products.keys():
         product = products[town][0]
         state = products[town][1]
         station = match_forecast_to_station(state, town, stations)
         if station:
-            data[product] = {
-                "site_name": town,
-                "product": product,
-                "lat": station.lat,
-                "lon": station.lon,
-                "state": state,
-            }
+            data[product] = ForecastStation(town, product,station.lat,station.lon,state)
     return data
 
 
 def match_forecast_to_station(
-    state: str, town: str, stations: List[Station]
+    state: str, town: str, stations: Dict[str, Station]
 ) -> Optional[Station]:
 
     town_name = town.split("-", 1)[0]
-    for station in stations:
-        if not station.lat:
+    for wmo in stations.keys():
+        if not stations[wmo].lat:
             continue
-        st_state = station.state.lower()
-        st_name = station.site_name.lower()
+        st_state = stations[wmo].state.lower()
+        st_name = stations[wmo].site_name.lower()
         if state == st_state:
             if town_name in st_name:
-                return station
+                return stations[wmo]
     return None
 
 
 def geo_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """ Get distance between points
-    Formulala from https://stackoverflow.com/a/41337005
+    Formula from https://stackoverflow.com/a/41337005
     """
     p = 0.017_453_292_519_943_295
     a = (
@@ -131,175 +173,4 @@ def geo_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     return 12742 * asin(sqrt(a))
 
 
-def closest_obs_station(lat: float, lon: float, web_lookup: bool = False):
-    """ Get the closest station for a location
 
-    :param lat: Latitude
-    :param lon: Longitude
-    :param web_lookup: Should it re-download station list from web
-    """
-
-    stations = get_obs_locations(web_lookup)
-    closest_wmo = min(
-        stations,
-        key=lambda wmo: geo_distance(
-            lat, lon, stations[wmo]["lat"], stations[wmo]["lon"]
-        ),
-    )
-    return stations[closest_wmo]
-
-
-def closest_forecast_location(lat: float, lon: float, web_lookup: bool = False):
-    """ Get the closest station for a location
-
-    :param lat: Latitude
-    :param lon: Longitude
-    :param web_lookup: Should it re-download station list from web
-    """
-
-    stations = get_forecast_locations(web_lookup)
-    closest_product = min(
-        stations,
-        key=lambda product: geo_distance(
-            lat, lon, stations[product]["lat"], stations[product]["lon"]
-        ),
-    )
-    return stations[closest_product]
-
-
-def get_observations_product_list():
-    """ Get list of history product IDs for WMOs
-        by scraping state overivew pages
-    """
-    logging.info("Scraping list of BOM observation locations")
-    products = dict()
-    pattern = (
-        r'<a href="/products/(?P<product>ID[A-Z]\d\d\d\d\d)/'
-        r'(?P=product)\.(?P<wmo>\d\d\d\d\d).shtml">'
-    )
-
-    for state in STATES:
-        url = f"http://www.bom.gov.au/{state}/observations/{state}all.shtml"
-        r = requests.get(url, timeout=10)
-        for product, wmo in re.findall(pattern, r.text):
-            wmo = int(wmo)
-            products[wmo] = product
-
-    return products
-
-
-def download_station_list():
-    """ Download list of observation station metadata from
-        Bureau of Meteorology FTP service
-    """
-
-    logging.info("Downloading BOM Station Data")
-    host = "ftp.bom.gov.au"
-    folder = "anon2/home/ncc/metadata/sitelists"
-    filename = "stations.zip"
-
-    output = []
-    with io.BytesIO() as fp:
-        with ftplib.FTP(host) as ftp:
-            ftp.login()
-            ftp.cwd(folder)
-            ftp.retrbinary(f"RETR {filename}", fp.write)
-            fp.seek(0)  # Return to start of file
-            with zipfile.ZipFile(fp) as archive:
-                with archive.open("stations.txt") as txt_file:
-                    for line in txt_file:
-                        output.append(line)
-    return output
-
-
-def load_local_station_list():
-    STN_LOOKUP = thisdir / "stations.zip"
-    output = []
-    with open(STN_LOOKUP, "rb") as fp:
-        with zipfile.ZipFile(fp) as archive:
-            with archive.open("stations.txt") as txt_file:
-                for line in txt_file:
-                    output.append(line)
-                return output
-
-
-def parse_station_list() -> Iterator[Station]:
-    """ Parse stations.txt file """
-
-    station_list = download_station_list()
-    for i, line in enumerate(station_list):
-        if i < 4:
-            continue  # Skip headers
-        row = line.decode().strip()
-        if len(row) < 20:
-            # Empty line means we are at the footer
-            break
-
-        wmo = row[128:135]
-        # If no WMO then skip station
-        if ".." in wmo:
-            wmo = None
-        else:
-            wmo = int(wmo)
-
-        site_id = row[0:6]
-        site_name = row[12:55].strip()
-        lat = float(row[70:78])
-        lon = float(row[79:88])
-        state = row[104:108].strip()
-
-        yield Station(site_id, site_name, lat, lon, state, wmo)
-
-
-def get_forecast_product_list():
-    """ Get list of history product IDs for WMOs
-        by scraping state overivew pages
-    """
-
-    logging.info("Scraping list of BOM forecast locations")
-    products = dict()
-    for state in STATES:
-        url = f"http://www.bom.gov.au/{state}/forecasts/precis.shtml"
-        r = requests.get(url, timeout=10)
-        pattern = r'/forecasts/(?P<town>.+?).shtml">Detailed'
-        for town in re.findall(pattern, r.text):
-            product = get_forecast_product_id(state, town)
-            if product:
-                products[town] = (product, state)
-    return products
-
-
-def get_forecast_product_id(state: str, town: str) -> Optional[str]:
-    """ Get the product ID from page """
-    url = f"http://www.bom.gov.au/{state}/forecasts/{town}.shtml"
-    r = requests.get(url, timeout=10)
-    pattern = r"Product (ID[A-Z]\d{5})"
-    try:
-        product = re.findall(pattern, r.text)[0]
-    except IndexError:
-        pattern2 = r"Product derived from (ID[A-Z]\d{5}) and (ID[A-Z]\d{5})"
-        try:
-            products = re.findall(pattern2, r.text)[0]
-            product = products[-1]
-        except IndexError:
-            return None
-    return product
-
-
-if __name__ == "__main__":
-
-    LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
-    logger = logging.getLogger()  # Root Logger
-    logging.basicConfig(level="INFO", format=LOG_FORMAT)
-
-    # Update the obs_stations.json file
-    logging.info("Updating obs_stations.json")
-    data = get_obs_locations(web_lookup=True)
-    with open(OBS_STN_LOOKUP, "w") as fp:
-        json.dump(data, fp, indent=4, sort_keys=True)
-
-    # Update the forecast_stations.json file
-    logging.info("Updating obs_stations.json")
-    data = get_forecast_locations(web_lookup=True)
-    with open(FC_STN_LOOKUP, "w") as fp:
-        json.dump(data, fp, indent=4, sort_keys=True)

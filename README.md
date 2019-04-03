@@ -9,7 +9,7 @@ Load weather data from the Australian Bureau of Meteorology (BOM) website.
 ```python
 > from bomweather import closest_obs_station
 > station = closest_obs_station(lat=-27.470125, lon=153.021072)
-> print(station['site_name'], station['product'], station['wmo'])
+> print(station.site_name, station.obs_product, station.wmo)
 BRISBANE IDQ60801 94576
 ```
 
@@ -27,7 +27,7 @@ Observation(wmo=94576, name='Brisbane', history_product='IDQ60801', local_dt=dat
 ```python
 > from bomweather import closest_forecast_location
 > station = closest_forecast_location(lat=-27.470125, lon=153.021072)
-> print(station['site_name'], station['product'])
+> print(station.site_name, station.obs_product)
 oxley IDQ10095
 ```
 
